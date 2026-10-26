@@ -1,0 +1,1408 @@
+[    1.071365] laptop kernel: Linux version 7.0.0-38-generic (buildd@lcy02-amd64-070) (x86_64-linux-gnu-gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 (Ubuntu 7.0.0-38.38-generic 7.0.14)
+[    1.071387] laptop kernel: Command line: BOOT_IMAGE=/boot/vmlinuz-7.0.0-38-generic root=UUID=ROOT-UUID ro quiet splash crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
+[    1.071395] laptop kernel: KERNEL supported cpus:
+[    1.071401] laptop kernel:   Intel GenuineIntel
+[    1.071407] laptop kernel:   AMD AuthenticAMD
+[    1.071413] laptop kernel:   Hygon HygonGenuine
+[    1.071422] laptop kernel:   Centaur CentaurHauls
+[    1.071427] laptop kernel:   zhaoxin   Shanghai  
+[    1.071433] laptop kernel: BIOS-provided physical RAM map:
+[    1.071439] laptop kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff]  System RAM
+[    1.071445] laptop kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff]  device reserved
+[    1.071450] laptop kernel: BIOS-e820: [mem 0x0000000000100000-0x0000000009a7efff]  System RAM
+[    1.071456] laptop kernel: BIOS-e820: [mem 0x0000000009a7f000-0x0000000009ffffff]  device reserved
+[    1.071462] laptop kernel: BIOS-e820: [mem 0x000000000a000000-0x000000000a1fffff]  System RAM
+[    1.071468] laptop kernel: BIOS-e820: [mem 0x000000000a200000-0x000000000a23bfff]  ACPI NVS
+[    1.071474] laptop kernel: BIOS-e820: [mem 0x000000000a23c000-0x00000000921c4fff]  System RAM
+[    1.071482] laptop kernel: BIOS-e820: [mem 0x00000000921c5000-0x0000000094bcafff]  device reserved
+[    1.071488] laptop kernel: BIOS-e820: [mem 0x0000000094bcb000-0x0000000094c48fff]  ACPI data
+[    1.071493] laptop kernel: BIOS-e820: [mem 0x0000000094c49000-0x0000000095441fff]  ACPI NVS
+[    1.071499] laptop kernel: BIOS-e820: [mem 0x0000000095442000-0x0000000098dfefff]  device reserved
+[    1.071504] laptop kernel: BIOS-e820: [mem 0x0000000098dff000-0x0000000099ff8fff]  System RAM
+[    1.071510] laptop kernel: BIOS-e820: [mem 0x0000000099ff9000-0x0000000099ffcfff]  device reserved
+[    1.071515] laptop kernel: BIOS-e820: [mem 0x0000000099ffd000-0x0000000099ffefff]  System RAM
+[    1.071521] laptop kernel: BIOS-e820: [mem 0x0000000099fff000-0x000000009bffffff]  device reserved
+[    1.071527] laptop kernel: BIOS-e820: [gap 0x000000009c000000-0x000000009d78ffff]
+[    1.071532] laptop kernel: BIOS-e820: [mem 0x000000009d790000-0x000000009d7effff]  device reserved
+[    1.071538] laptop kernel: BIOS-e820: [gap 0x000000009d7f0000-0x000000009d7f4fff]
+[    1.071544] laptop kernel: BIOS-e820: [mem 0x000000009d7f5000-0x000000009fffffff]  device reserved
+[    1.071549] laptop kernel: BIOS-e820: [gap 0x00000000a0000000-0x00000000dfffffff]
+[    1.071555] laptop kernel: BIOS-e820: [mem 0x00000000e0000000-0x00000000efffffff]  device reserved
+[    1.071560] laptop kernel: BIOS-e820: [gap 0x00000000f0000000-0x00000000fcffffff]
+[    1.071568] laptop kernel: BIOS-e820: [mem 0x00000000fd000000-0x00000000ffffffff]  device reserved
+[    1.071574] laptop kernel: BIOS-e820: [mem 0x0000000100000000-0x000000081e2fffff]  System RAM
+[    1.071579] laptop kernel: BIOS-e820: [gap 0x000000081e300000-0x000000081f33ffff]
+[    1.071585] laptop kernel: BIOS-e820: [mem 0x000000081f340000-0x00000008801fffff]  device reserved
+[    1.071590] laptop kernel: NX (Execute Disable) protection: active
+[    1.071596] laptop kernel: APIC: Static calls initialized
+[    1.071601] laptop kernel: efi: EFI v2.8 by American Megatrends
+[    1.071607] laptop kernel: efi: ACPI=0x94c48000 ACPI 2.0=0x94c48014 TPMFinalLog=0x953f6000 SMBIOS=0x98b2b000 SMBIOS 3.0=0x98b2a000 MEMATTR=0x8ec6e018 ESRT=0x9114c918 MOKvar=0x98b8a000 INITRD=0x8624db18 RNG=0x94be3018 TPMEventLog=0x94bd5018 
+[    1.071613] laptop kernel: random: crng init done
+[    1.071623] laptop kernel: efi: Remove mem62: MMIO range=[0xe0000000-0xefffffff] (256MB) from e820 map
+[    1.071628] laptop kernel: e820: remove [mem 0xe0000000-0xefffffff] device reserved
+[    1.071635] laptop kernel: efi: Remove mem63: MMIO range=[0xfd000000-0xfedfffff] (30MB) from e820 map
+[    1.071640] laptop kernel: e820: remove [mem 0xfd000000-0xfedfffff] device reserved
+[    1.071646] laptop kernel: efi: Not removing mem64: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+[    1.071652] laptop kernel: efi: Remove mem65: MMIO range=[0xfee01000-0xffffffff] (17MB) from e820 map
+[    1.071658] laptop kernel: e820: remove [mem 0xfee01000-0xffffffff] device reserved
+[    1.071663] laptop kernel: efi: Remove mem67: MMIO range=[0x860000000-0x8801fffff] (514MB) from e820 map
+[    1.071671] laptop kernel: e820: remove [mem 0x860000000-0x8801fffff] device reserved
+[    1.071676] laptop kernel: SMBIOS 3.5.0 present.
+[    1.071682] laptop kernel: DMI: Lecoo Lecoo N155A/N155A Motherboard, BIOS N155A_00_V2.5_PKID 03/27/2026
+[    1.071687] laptop kernel: DMI: Memory slots populated: 2/2
+[    1.071693] laptop kernel: secureboot: Secure boot enabled
+[    1.071699] laptop kernel: Kernel is locked down from EFI Secure Boot mode; see man kernel_lockdown.7
+[    1.071704] laptop kernel: tsc: Fast TSC calibration using PIT
+[    1.071710] laptop kernel: tsc: Detected 3792.823 MHz processor
+[    1.071715] laptop kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+[    1.071722] laptop kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+[    1.071728] laptop kernel: last_pfn = 0x81e300 max_arch_pfn = 0x400000000
+[    1.071734] laptop kernel: MTRR map: 5 entries (3 fixed + 2 variable; max 20), built from 9 variable MTRRs
+[    1.071740] laptop kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    1.071748] laptop kernel: e820: update [mem 0xa0000000-0xffffffff] System RAM ==> device reserved
+[    1.071758] laptop kernel: last_pfn = 0x99fff max_arch_pfn = 0x400000000
+[    1.071764] laptop kernel: esrt: Reserving ESRT space from 0x000000009114c918 to 0x000000009114c978.
+[    1.071770] laptop kernel: e820: update [mem 0x9114c000-0x9114cfff] System RAM ==> device reserved
+[    1.071776] laptop kernel: Using GB pages for direct mapping
+[    1.071783] laptop kernel: secureboot: Secure boot enabled
+[    1.071789] laptop kernel: RAMDISK: [mem 0x7a79f000-0x7cefffff]
+[    1.071794] laptop kernel: ACPI: Early table checksum verification disabled
+[    1.071801] laptop kernel: ACPI: RSDP 0x0000000094C48014 000024 (v02 ALASKA)
+[    1.071809] laptop kernel: ACPI: XSDT 0x0000000094C47728 000174 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    1.071815] laptop kernel: ACPI: FACP 0x0000000094C3B000 000114 (v06 ALASKA A M I    01072009 AMI  00010013)
+[    1.071821] laptop kernel: ACPI: DSDT 0x0000000094C2D000 00D1ED (v02 ALASKA A M I    01072009 INTL 20220331)
+[    1.071827] laptop kernel: ACPI: FACS 0x0000000094DE3000 000040
+[    1.071833] laptop kernel: ACPI: MSDM 0x0000000094C46000 000055 (v03 ALASKA A M I    01072009 AMI  01000013)
+[    1.071839] laptop kernel: ACPI: SSDT 0x0000000094C3D000 008416 (v02 AMD    AmdTable 00000002 MSFT 02000002)
+[    1.071845] laptop kernel: ACPI: SSDT 0x0000000094C3C000 000221 (v02 ALASKA CPUSSDT  01072009 AMI  01072009)
+[    1.071851] laptop kernel: ACPI: FIDT 0x0000000094C2C000 00009C (v01 ALASKA A M I    01072009 AMI  00010013)
+[    1.071857] laptop kernel: ACPI: MCFG 0x0000000094C2B000 00003C (v01 ALASKA A M I    01072009 MSFT 00010013)
+[    1.071865] laptop kernel: ACPI: HPET 0x0000000094C2A000 000038 (v01 ALASKA A M I    01072009 AMI  00000005)
+[    1.071872] laptop kernel: ACPI: UEFI 0x0000000094DE2000 000048 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    1.071878] laptop kernel: ACPI: FPDT 0x0000000094C29000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    1.071884] laptop kernel: ACPI: VFCT 0x0000000094C24000 004284 (v01 ALASKA A M I    00000001 AMD  33504F47)
+[    1.071890] laptop kernel: ACPI: BGRT 0x0000000094C23000 000038 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    1.071896] laptop kernel: ACPI: TPM2 0x0000000094C22000 000044 (v05 ALASKA A M I    00000001 AMI  00000000)
+[    1.071902] laptop kernel: ACPI: SSDT 0x0000000094C1C000 00547E (v02 AMD    AmdTable 00000001 AMD  00000001)
+[    1.071908] laptop kernel: ACPI: CRAT 0x0000000094C1B000 000EE8 (v01 AMD    AmdTable 00000001 AMD  00000001)
+[    1.071916] laptop kernel: ACPI: CDIT 0x0000000094C1A000 000029 (v01 AMD    AmdTable 00000001 AMD  00000001)
+[    1.071922] laptop kernel: ACPI: SSDT 0x0000000094C19000 000BD3 (v02 AMD    CPMDFIG4 00000001 INTL 20220331)
+[    1.071929] laptop kernel: ACPI: SSDT 0x0000000094C16000 002A9E (v02 AMD    CDFAAIG2 00000001 INTL 20220331)
+[    1.071935] laptop kernel: ACPI: SSDT 0x0000000094C14000 001EE1 (v02 AMD    CPMPMF   00000001 INTL 20220331)
+[    1.071941] laptop kernel: ACPI: SSDT 0x0000000094C13000 000483 (v02 AMD    OEMACP   00000001 INTL 20220331)
+[    1.071947] laptop kernel: ACPI: SSDT 0x0000000094C12000 0008BA (v02 AMD    OEMPMF   00000001 INTL 20220331)
+[    1.071953] laptop kernel: ACPI: SSDT 0x0000000094C08000 009902 (v02 AMD    CPMCMN   00000001 INTL 20220331)
+[    1.071959] laptop kernel: ACPI: SSDT 0x0000000094C07000 000C15 (v01 AMD    WLAN     00000001 INTL 20220331)
+[    1.071967] laptop kernel: ACPI: SSDT 0x0000000094C06000 0007D1 (v02 AMD    NVME     00000001 INTL 20220331)
+[    1.071974] laptop kernel: ACPI: SSDT 0x0000000094C05000 000A7E (v02 AMD    GpMsSsdt 00000001 INTL 20220331)
+[    1.071982] laptop kernel: ACPI: SSDT 0x0000000094C04000 000057 (v02 AMD    GPP0     00000001 INTL 20220331)
+[    1.071988] laptop kernel: ACPI: SSDT 0x0000000094C02000 00153C (v02 AMD    UPEP     00000001 INTL 20220331)
+[    1.071994] laptop kernel: ACPI: WSMT 0x0000000094C01000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    1.072001] laptop kernel: ACPI: APIC 0x0000000094C00000 0000E8 (v06 ALASKA A M I    01072009 AMI  00010013)
+[    1.072007] laptop kernel: ACPI: MHSP 0x0000000094BFF000 0000C8 (v04 AMD    AGESA    20505348 ?    00000001)
+[    1.072013] laptop kernel: ACPI: SSDT 0x0000000094BFE000 0000E5 (v02 MSFT   MHSP     00000004 INTL 20220331)
+[    1.072019] laptop kernel: ACPI: SSDT 0x0000000094BFB000 002370 (v02 AMD    AOD      00000001 INTL 20220331)
+[    1.072027] laptop kernel: ACPI: IVRS 0x0000000094BFA000 0001F8 (v02 AMD    AmdTable 00000001 AMD  00000001)
+[    1.072034] laptop kernel: ACPI: SSDT 0x0000000094BF9000 000968 (v02 AMD    CPMMSOSC 00000001 INTL 20220331)
+[    1.072040] laptop kernel: ACPI: SSDT 0x0000000094BF8000 000FF5 (v02 AMD    CPMACPV5 00000001 INTL 20220331)
+[    1.072046] laptop kernel: ACPI: SSDT 0x0000000094BF7000 000608 (v02 AMD    TOUCHPNL 00000001 INTL 20220331)
+[    1.072052] laptop kernel: ACPI: SSDT 0x0000000094BF6000 000609 (v02 AMD    TOUCHPAD 00000001 INTL 20220331)
+[    1.072058] laptop kernel: ACPI: SSDT 0x0000000094BF5000 0007DD (v02 AMD    THERMAL0 00000001 INTL 20220331)
+[    1.072064] laptop kernel: ACPI: SSDT 0x0000000094BF4000 000FF7 (v02 AMD    GPP_PME_ 00000001 INTL 20220331)
+[    1.072070] laptop kernel: ACPI: SSDT 0x0000000094BEB000 008912 (v02 AMD    INTGPP03 00000001 INTL 20220331)
+[    1.072078] laptop kernel: ACPI: SSDT 0x0000000094BE6000 004FEB (v02 AMD    INTGPP01 00000001 INTL 20220331)
+[    1.072084] laptop kernel: ACPI: SSDT 0x0000000094BE5000 000D29 (v02 AMD    CPMGPIO0 00000001 INTL 20220331)
+[    1.072090] laptop kernel: ACPI: SSDT 0x0000000094BE4000 00008D (v02 AMD    CPMMSLPI 00000001 INTL 20220331)
+[    1.072096] laptop kernel: ACPI: Reserving FACP table memory at [mem 0x94c3b000-0x94c3b113]
+[    1.072103] laptop kernel: ACPI: Reserving DSDT table memory at [mem 0x94c2d000-0x94c3a1ec]
+[    1.072109] laptop kernel: ACPI: Reserving FACS table memory at [mem 0x94de3000-0x94de303f]
+[    1.072120] laptop kernel: ACPI: Reserving MSDM table memory at [mem 0x94c46000-0x94c46054]
+[    1.072126] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c3d000-0x94c45415]
+[    1.072132] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c3c000-0x94c3c220]
+[    1.072138] laptop kernel: ACPI: Reserving FIDT table memory at [mem 0x94c2c000-0x94c2c09b]
+[    1.072144] laptop kernel: ACPI: Reserving MCFG table memory at [mem 0x94c2b000-0x94c2b03b]
+[    1.072151] laptop kernel: ACPI: Reserving HPET table memory at [mem 0x94c2a000-0x94c2a037]
+[    1.072157] laptop kernel: ACPI: Reserving UEFI table memory at [mem 0x94de2000-0x94de2047]
+[    1.072163] laptop kernel: ACPI: Reserving FPDT table memory at [mem 0x94c29000-0x94c29043]
+[    1.072169] laptop kernel: ACPI: Reserving VFCT table memory at [mem 0x94c24000-0x94c28283]
+[    1.072175] laptop kernel: ACPI: Reserving BGRT table memory at [mem 0x94c23000-0x94c23037]
+[    1.072181] laptop kernel: ACPI: Reserving TPM2 table memory at [mem 0x94c22000-0x94c22043]
+[    1.072186] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c1c000-0x94c2147d]
+[    1.072193] laptop kernel: ACPI: Reserving CRAT table memory at [mem 0x94c1b000-0x94c1bee7]
+[    1.072198] laptop kernel: ACPI: Reserving CDIT table memory at [mem 0x94c1a000-0x94c1a028]
+[    1.072206] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c19000-0x94c19bd2]
+[    1.072212] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c16000-0x94c18a9d]
+[    1.072218] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c14000-0x94c15ee0]
+[    1.072223] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c13000-0x94c13482]
+[    1.072229] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c12000-0x94c128b9]
+[    1.072235] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c08000-0x94c11901]
+[    1.072241] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c07000-0x94c07c14]
+[    1.072246] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c06000-0x94c067d0]
+[    1.072253] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c05000-0x94c05a7d]
+[    1.072258] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c04000-0x94c04056]
+[    1.072264] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94c02000-0x94c0353b]
+[    1.072270] laptop kernel: ACPI: Reserving WSMT table memory at [mem 0x94c01000-0x94c01027]
+[    1.072278] laptop kernel: ACPI: Reserving APIC table memory at [mem 0x94c00000-0x94c000e7]
+[    1.072283] laptop kernel: ACPI: Reserving MHSP table memory at [mem 0x94bff000-0x94bff0c7]
+[    1.072289] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bfe000-0x94bfe0e4]
+[    1.072295] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bfb000-0x94bfd36f]
+[    1.072301] laptop kernel: ACPI: Reserving IVRS table memory at [mem 0x94bfa000-0x94bfa1f7]
+[    1.072307] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bf9000-0x94bf9967]
+[    1.072313] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bf8000-0x94bf8ff4]
+[    1.072318] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bf7000-0x94bf7607]
+[    1.072324] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bf6000-0x94bf6608]
+[    1.072330] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bf5000-0x94bf57dc]
+[    1.072336] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94bf4000-0x94bf4ff6]
+[    1.072342] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94beb000-0x94bf3911]
+[    1.072349] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94be6000-0x94beafea]
+[    1.072355] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94be5000-0x94be5d28]
+[    1.072361] laptop kernel: ACPI: Reserving SSDT table memory at [mem 0x94be4000-0x94be408c]
+[    1.072367] laptop kernel: No NUMA configuration found
+[    1.072373] laptop kernel: Faking a node at [mem 0x0000000000000000-0x000000081e2fffff]
+[    1.072379] laptop kernel: NODE_DATA(0) allocated [mem 0x81e2d5280-0x81e2fffff]
+[    1.072385] laptop kernel: crashkernel reserved: 0x000000005a000000 - 0x000000007a000000 (512 MB)
+[    1.072391] laptop kernel: ACPI: PM-Timer IO Port: 0x808
+[    1.072397] laptop kernel: ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+[    1.072403] laptop kernel: IOAPIC[0]: apic_id 33, version 33, address 0xfec00000, GSI 0-23
+[    1.072411] laptop kernel: IOAPIC[1]: apic_id 34, version 33, address 0xfec01000, GSI 24-55
+[    1.072417] laptop kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    1.072423] laptop kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 1 global_irq 1 high edge)
+[    1.072430] laptop kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[    1.072436] laptop kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+[    1.072442] laptop kernel: ACPI: HPET id: 0x10228201 base: 0xfed00000
+[    1.072448] laptop kernel: e820: update [mem 0x8cf8b000-0x8de5ffff] System RAM ==> device reserved
+[    1.072454] laptop kernel: CPU topo: Max. logical packages:   1
+[    1.072462] laptop kernel: CPU topo: Max. logical nodes:      1
+[    1.072468] laptop kernel: CPU topo: Num. nodes per package:  1
+[    1.072473] laptop kernel: CPU topo: Max. logical dies:       1
+[    1.072479] laptop kernel: CPU topo: Max. dies per package:   1
+[    1.072485] laptop kernel: CPU topo: Max. threads per core:   2
+[    1.072491] laptop kernel: CPU topo: Num. cores per package:     8
+[    1.072497] laptop kernel: CPU topo: Num. threads per package:  16
+[    1.072503] laptop kernel: CPU topo: Allowing 16 present CPUs plus 0 hotplug CPUs
+[    1.072509] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    1.072515] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[    1.072521] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x09a7f000-0x09ffffff]
+[    1.072529] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x0a200000-0x0a23bfff]
+[    1.072535] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x8cf8b000-0x8de5ffff]
+[    1.072541] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x9114c000-0x9114cfff]
+[    1.072547] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x921c5000-0x98dfefff]
+[    1.072553] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x99ff9000-0x99ffcfff]
+[    1.072559] laptop kernel: PM: hibernation: Registered nosave memory: [mem 0x99fff000-0xffffffff]
+[    1.072565] laptop kernel: [gap 0xa0000000-0xfedfffff] available for PCI devices
+[    1.072571] laptop kernel: Booting paravirtualized kernel on bare hardware
+[    1.072578] laptop kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    1.072586] laptop kernel: Zone ranges:
+[    1.072592] laptop kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    1.072598] laptop kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    1.072604] laptop kernel:   Normal   [mem 0x0000000100000000-0x000000081e2fffff]
+[    1.072610] laptop kernel:   Device   empty
+[    1.072616] laptop kernel: Movable zone start for each node
+[    1.072622] laptop kernel: Early memory node ranges
+[    1.072628] laptop kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+[    1.072634] laptop kernel:   node   0: [mem 0x0000000000100000-0x0000000009a7efff]
+[    1.072640] laptop kernel:   node   0: [mem 0x000000000a000000-0x000000000a1fffff]
+[    1.072648] laptop kernel:   node   0: [mem 0x000000000a23c000-0x00000000921c4fff]
+[    1.072654] laptop kernel:   node   0: [mem 0x0000000098dff000-0x0000000099ff8fff]
+[    1.072660] laptop kernel:   node   0: [mem 0x0000000099ffd000-0x0000000099ffefff]
+[    1.072665] laptop kernel:   node   0: [mem 0x0000000100000000-0x000000081e2fffff]
+[    1.072672] laptop kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000081e2fffff]
+[    1.072678] laptop kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+[    1.072684] laptop kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+[    1.072690] laptop kernel: On node 0, zone DMA32: 1409 pages in unavailable ranges
+[    1.072696] laptop kernel: On node 0, zone DMA32: 60 pages in unavailable ranges
+[    1.072702] laptop kernel: On node 0, zone DMA32: 27706 pages in unavailable ranges
+[    1.072710] laptop kernel: On node 0, zone DMA32: 4 pages in unavailable ranges
+[    1.072716] laptop kernel: On node 0, zone Normal: 24577 pages in unavailable ranges
+[    1.072723] laptop kernel: On node 0, zone Normal: 7424 pages in unavailable ranges
+[    1.072729] laptop kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+[    1.072735] laptop kernel: percpu: Embedded 85 pages/cpu s225280 r8192 d114688 u524288
+[    1.072741] laptop kernel: pcpu-alloc: s225280 r8192 d114688 u524288 alloc=1*2097152
+[    1.072747] laptop kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+[    1.072753] laptop kernel: pcpu-alloc: [0] 08 09 10 11 [0] 12 13 14 15 
+[    1.072786] laptop kernel: Kernel command line: BOOT_IMAGE=/boot/vmlinuz-7.0.0-38-generic root=UUID=ROOT-UUID ro quiet splash crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M
+[    1.072792] laptop kernel: Unknown kernel command line parameters "splash", will be passed to user space.
+[    1.072798] laptop kernel: printk: log buffer data + meta data: 262144 + 1114112 = 1376256 bytes
+[    1.072805] laptop kernel: Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+[    1.072811] laptop kernel: Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+[    1.072817] laptop kernel: software IO TLB: area num 16.
+[    1.072823] laptop kernel: Fallback order for Node 0: 0 
+[    1.072829] laptop kernel: Built 1 zonelists, mobility grouping on.  Total pages: 8065187
+[    1.072835] laptop kernel: Policy zone: Normal
+[    1.072843] laptop kernel: mem auto-init: stack:all(zero), heap alloc:on, heap free:off
+[    1.072850] laptop kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[    1.072856] laptop kernel: ftrace: allocating 63997 entries in 252 pages
+[    1.072862] laptop kernel: ftrace: allocated 252 pages with 6 groups
+[    1.072868] laptop kernel: Dynamic Preempt: lazy
+[    1.072874] laptop kernel: rcu: Preemptible hierarchical RCU implementation.
+[    1.072881] laptop kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+[    1.072887] laptop kernel:         Trampoline variant of Tasks RCU enabled.
+[    1.072893] laptop kernel:         Rude variant of Tasks RCU enabled.
+[    1.072901] laptop kernel:         Tracing variant of Tasks RCU enabled.
+[    1.072907] laptop kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    1.072913] laptop kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[    1.072919] laptop kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+[    1.072926] laptop kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=16.
+[    1.072932] laptop kernel: NR_IRQS: 524544, nr_irqs: 1096, preallocated irqs: 16
+[    1.072938] laptop kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    1.072944] laptop kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    1.072954] laptop kernel: Console: colour dummy device 80x25
+[    1.072963] laptop kernel: printk: legacy console [tty0] enabled
+[    1.072969] laptop kernel: ACPI: Core revision 20251212
+[    1.072976] laptop kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 133484873504 ns
+[    1.072984] laptop kernel: APIC: Switch to symmetric I/O mode setup
+[    1.072991] laptop kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR0, rdevid:0xa0
+[    1.072997] laptop kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR1, rdevid:0xa0
+[    1.073003] laptop kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR2, rdevid:0xa0
+[    1.073009] laptop kernel: AMD-Vi: ivrs, add hid:AMDI0020, uid:\_SB.FUR3, rdevid:0xa0
+[    1.073015] laptop kernel: AMD-Vi: Using global IVHD EFR:0x246577efa2054ada, EFR2:0x0
+[    1.073023] laptop kernel: x2apic: IRQ remapping doesn't support X2APIC mode
+[    1.073029] laptop kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    1.073036] laptop kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x6d57b85400d, max_idle_ns: 881590936851 ns
+[    1.073042] laptop kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 7585.64 BogoMIPS (lpj=3792823)
+[    1.073048] laptop kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+[    1.073054] laptop kernel: LVT offset 1 assigned for vector 0xf9
+[    1.073060] laptop kernel: LVT offset 2 assigned for vector 0xf4
+[    1.073066] laptop kernel: Last level iTLB entries: 4KB 512, 2MB 512, 4MB 256
+[    1.073072] laptop kernel: Last level dTLB entries: 4KB 3072, 2MB 3072, 4MB 1536, 1GB 0
+[    1.073080] laptop kernel: process: using mwait in idle threads
+[    1.073087] laptop kernel: mitigations: Enabled attack vectors: user_kernel, user_user, guest_host, guest_guest, SMT mitigations: auto
+[    1.073093] laptop kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+[    1.073099] laptop kernel: Transient Scheduler Attacks: Mitigation: Clear CPU buffers
+[    1.073105] laptop kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+[    1.073111] laptop kernel: Spectre V2 : User space: Mitigation: STIBP always-on protection
+[    1.073117] laptop kernel: Speculative Return Stack Overflow: Mitigation: Safe RET
+[    1.073123] laptop kernel: VMSCAPE: Mitigation: IBPB before exit to userspace
+[    1.073128] laptop kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    1.073136] laptop kernel: Spectre V2 : Enabling IBPB for BPF
+[    1.073143] laptop kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    1.073149] laptop kernel: active return thunk: srso_alias_return_thunk
+[    1.073155] laptop kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    1.073161] laptop kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    1.073167] laptop kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    1.073173] laptop kernel: x86/fpu: Supporting XSAVE feature 0x020: 'AVX-512 opmask'
+[    1.073179] laptop kernel: x86/fpu: Supporting XSAVE feature 0x040: 'AVX-512 Hi256'
+[    1.073185] laptop kernel: x86/fpu: Supporting XSAVE feature 0x080: 'AVX-512 ZMM_Hi256'
+[    1.073193] laptop kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[    1.073199] laptop kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+[    1.073205] laptop kernel: x86/fpu: Supporting XSAVE feature 0x1000: 'Control-flow Kernel registers (KVM only)'
+[    1.073211] laptop kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    1.073217] laptop kernel: x86/fpu: xstate_offset[5]:  832, xstate_sizes[5]:   64
+[    1.073223] laptop kernel: x86/fpu: xstate_offset[6]:  896, xstate_sizes[6]:  512
+[    1.073229] laptop kernel: x86/fpu: xstate_offset[7]: 1408, xstate_sizes[7]: 1024
+[    1.073235] laptop kernel: x86/fpu: xstate_offset[9]: 2432, xstate_sizes[9]:    8
+[    1.073241] laptop kernel: x86/fpu: xstate_offset[11]: 2440, xstate_sizes[11]:   16
+[    1.073247] laptop kernel: x86/fpu: xstate_offset[12]: 2456, xstate_sizes[12]:   24
+[    1.073255] laptop kernel: x86/fpu: Enabled xstate features 0x1ae7, context size is 2480 bytes, using 'compacted' format.
+[    1.073261] laptop kernel: Freeing SMP alternatives memory: 56K
+[    1.073267] laptop kernel: pid_max: default: 32768 minimum: 301
+[    1.073273] laptop kernel: landlock: Up and running.
+[    1.073279] laptop kernel: Yama: becoming mindful.
+[    1.073285] laptop kernel: AppArmor: AppArmor initialized
+[    1.073291] laptop kernel: AppArmor: AppArmor secmark mediation reserved: ready to be enabled
+[    1.073297] laptop kernel: Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    1.073303] laptop kernel: Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    1.073312] laptop kernel: VFS: Finished mounting rootfs on nullfs
+[    1.073318] laptop kernel: smpboot: CPU0: AMD Ryzen 7 H 255 w/ Radeon 780M Graphics (family: 0x19, model: 0x75, stepping: 0x2)
+[    1.073324] laptop kernel: Performance Events: Fam17h+ 16-deep LBR, core perfctr, AMD PMU driver.
+[    1.073330] laptop kernel: ... version:                   2
+[    1.073336] laptop kernel: ... bit width:                 48
+[    1.073342] laptop kernel: ... generic counters:          6
+[    1.073347] laptop kernel: ... generic bitmap:            000000000000003f
+[    1.073353] laptop kernel: ... fixed-purpose counters:    0
+[    1.073359] laptop kernel: ... fixed-purpose bitmap:      0000000000000000
+[    1.073364] laptop kernel: ... value mask:                0000ffffffffffff
+[    1.073370] laptop kernel: ... max period:                00007fffffffffff
+[    1.073375] laptop kernel: ... global_ctrl mask:          000000000000003f
+[    1.073381] laptop kernel: signal: max sigframe size: 3376
+[    1.073388] laptop kernel: rcu: Hierarchical SRCU implementation.
+[    1.073394] laptop kernel: rcu:         Max phase no-delay instances is 400.
+[    1.073400] laptop kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+[    1.073406] laptop kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    1.073412] laptop kernel: smp: Bringing up secondary CPUs ...
+[    1.073418] laptop kernel: smpboot: x86: Booting SMP configuration:
+[    1.073424] laptop kernel: .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11 #12 #13 #14 #15
+[    1.073431] laptop kernel: Spectre V2 : Update user space SMT mitigation: STIBP always-on
+[    1.073437] laptop kernel: smp: Brought up 1 node, 16 CPUs
+[    1.073443] laptop kernel: smpboot: Total of 16 processors activated (121370.33 BogoMIPS)
+[    1.073451] laptop kernel: Memory: 27090880K/32260748K available (23836K kernel code, 4957K rwdata, 16776K rodata, 5304K init, 5840K bss, 5142936K reserved, 0K cma-reserved)
+[    1.073457] laptop kernel: devtmpfs: initialized
+[    1.073463] laptop kernel: x86/mm: Memory block size: 128MB
+[    1.073469] laptop kernel: ACPI: PM: Registering ACPI NVS region [mem 0x0a200000-0x0a23bfff] (245760 bytes)
+[    1.073475] laptop kernel: ACPI: PM: Registering ACPI NVS region [mem 0x94c49000-0x95441fff] (8359936 bytes)
+[    1.073481] laptop kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+[    1.073487] laptop kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+[    1.073492] laptop kernel: PM: RTC time: 00:08:29, date: 2026-10-26
+[    1.073499] laptop kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    1.073506] laptop kernel: DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+[    1.073514] laptop kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    1.073520] laptop kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    1.073526] laptop kernel: audit: initializing netlink subsys (disabled)
+[    1.073532] laptop kernel: audit: type=2000 audit(1792973309.168:1): state=initialized audit_enabled=0 res=1
+[    1.073539] laptop kernel: thermal_sys: Registered thermal governor 'fair_share'
+[    1.073545] laptop kernel: thermal_sys: Registered thermal governor 'bang_bang'
+[    1.073551] laptop kernel: thermal_sys: Registered thermal governor 'step_wise'
+[    1.073557] laptop kernel: thermal_sys: Registered thermal governor 'user_space'
+[    1.073565] laptop kernel: thermal_sys: Registered thermal governor 'power_allocator'
+[    1.073571] laptop kernel: cpuidle: using governor ladder
+[    1.073577] laptop kernel: cpuidle: using governor menu
+[    1.073583] laptop kernel: efi: Freeing EFI boot services memory: 136284K
+[    1.073589] laptop kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    1.073595] laptop kernel: PCI: ECAM [mem 0xe0000000-0xefffffff] (base 0xe0000000) for domain 0000 [bus 00-ff]
+[    1.073601] laptop kernel: PCI: Using configuration type 1 for base access
+[    1.073617] laptop kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    1.073624] laptop kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    1.073631] laptop kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    1.073636] laptop kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    1.073642] laptop kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    1.073648] laptop kernel: ACPI: Added _OSI(Module Device)
+[    1.073654] laptop kernel: ACPI: Added _OSI(Processor Device)
+[    1.073662] laptop kernel: ACPI: Added _OSI(Processor Aggregator Device)
+[    1.073668] laptop kernel: ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.GPP7.WWAN], AE_NOT_FOUND (20251212/dswload2-162)
+[    1.073675] laptop kernel: ACPI Error: AE_NOT_FOUND, During name lookup/catalog (20251212/psobject-220)
+[    1.073682] laptop kernel: ACPI: Skipping parse of AML opcode: Scope (0x0010)
+[    1.073687] laptop kernel: ACPI: 27 ACPI AML tables successfully acquired and loaded
+[    1.073694] laptop kernel: ACPI: \_SB_: platform _OSC: OS support mask [006e7eff]
+[    1.073700] laptop kernel: ACPI: \_SB_: platform _OSC: OS control mask [006e7e7f]
+[    1.073706] laptop kernel: ACPI: USB4 _OSC: OS supports USB3+ DisplayPort+ PCIe+ XDomain+
+[    1.073712] laptop kernel: ACPI: USB4 _OSC: OS controls USB3+ DisplayPort+ PCIe+ XDomain+
+[    1.073720] laptop kernel: ACPI: EC: EC started
+[    1.073726] laptop kernel: ACPI: EC: interrupt blocked
+[    1.073732] laptop kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    1.073738] laptop kernel: ACPI: \_SB_.PCI0.SBRG.H_EC: Boot DSDT EC used to handle transactions
+[    1.073744] laptop kernel: ACPI: Interpreter enabled
+[    1.073752] laptop kernel: ACPI: PM: (supports S0 S4 S5)
+[    1.073761] laptop kernel: ACPI: Using IOAPIC for interrupt routing
+[    1.073768] laptop kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    1.073774] laptop kernel: PCI: Ignoring E820 reservations for host bridge windows
+[    1.073780] laptop kernel: ACPI: Enabled 4 GPEs in block 00 to 1F
+[    1.073786] laptop kernel: ACPI: \_SB_.PCI0.GPP6.PWSR: New power resource
+[    1.073794] laptop kernel: ACPI: \_SB_.PCI0.GPP8.P0NV: New power resource
+[    1.073801] laptop kernel: ACPI: \_SB_.PCI0.GP11.PWRS: New power resource
+[    1.073807] laptop kernel: ACPI: \_SB_.PCI0.GP11.SWUS.PWRS: New power resource
+[    1.073813] laptop kernel: ACPI: \_SB_.PCI0.GP12.PWRS: New power resource
+[    1.073819] laptop kernel: ACPI: \_SB_.PCI0.GP12.SWUS.PWRS: New power resource
+[    1.073825] laptop kernel: ACPI: \_SB_.PCI0.GP17.PWRS: New power resource
+[    1.073832] laptop kernel: ACPI: \_SB_.PCI0.GP17.VGA_.PWRS: New power resource
+[    1.073838] laptop kernel: ACPI: \_SB_.PCI0.GP17.HDAU.PWRS: New power resource
+[    1.073844] laptop kernel: ACPI: \_SB_.PCI0.GP17.ACP_.PWRS: New power resource
+[    1.073852] laptop kernel: ACPI: \_SB_.PCI0.GP17.AZAL.PWRS: New power resource
+[    1.073859] laptop kernel: ACPI: \_SB_.PCI0.GP17.XHC0.PWRS: New power resource
+[    1.073865] laptop kernel: ACPI: \_SB_.PCI0.GP17.XHC1.PWRS: New power resource
+[    1.073871] laptop kernel: ACPI: \_SB_.PCI0.GP19.XHC3.PWRS: New power resource
+[    1.073877] laptop kernel: ACPI: \_SB_.PCI0.GP19.XHC4.PWRS: New power resource
+[    1.073883] laptop kernel: ACPI: \_SB_.PCI0.GP19.NHI0.PWRS: New power resource
+[    1.073889] laptop kernel: ACPI: \_SB_.PCI0.GP19.NHI1.PWRS: New power resource
+[    1.073896] laptop kernel: ACPI: \_SB_.PCI0.GPP0.D1PR: New power resource
+[    1.073902] laptop kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    1.074177] laptop kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+[    1.074387] laptop kernel: acpi PNP0A08:00: _OSC: platform does not support [SHPCHotplug AER LTR DPC]
+[    1.074587] laptop kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME PCIeCapability]
+[    1.074595] laptop kernel: PCI host bridge to bus 0000:00
+[    1.074801] laptop kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x03af window]
+[    1.074996] laptop kernel: pci_bus 0000:00: root bus resource [io  0x03e0-0x0cf7 window]
+[    1.075185] laptop kernel: pci_bus 0000:00: root bus resource [io  0x03b0-0x03df window]
+[    1.075372] laptop kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    1.075561] laptop kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000dffff window]
+[    1.075783] laptop kernel: pci_bus 0000:00: root bus resource [mem 0xfa000000-0xfcffffff window]
+[    1.075969] laptop kernel: pci_bus 0000:00: root bus resource [mem 0xf0000000-0xf9ffffff window]
+[    1.076179] laptop kernel: pci_bus 0000:00: root bus resource [mem 0xa0000000-0xdfffffff window]
+[    1.076368] laptop kernel: pci_bus 0000:00: root bus resource [mem 0x860000000-0x7fffffffff window]
+[    1.076565] laptop kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.076799] laptop kernel: pci 0000:00:00.0: [1022:14e8] type 00 class 0x060000 conventional PCI endpoint
+[    1.077006] laptop kernel: pci 0000:00:00.2: [1022:14e9] type 00 class 0x080600 conventional PCI endpoint
+[    1.077208] laptop kernel: pci 0000:00:01.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+[    1.077410] laptop kernel: pci 0000:00:01.1: [1022:14ed] type 01 class 0x060400 PCIe Root Port
+[    1.077602] laptop kernel: pci 0000:00:01.1: PCI bridge to [bus 01-0a]
+[    1.077796] laptop kernel: pci 0000:00:01.1:   bridge window [io  0x9000-0xcfff]
+[    1.077999] laptop kernel: pci 0000:00:01.1:   bridge window [mem 0xc4000000-0xdbffffff]
+[    1.078191] laptop kernel: pci 0000:00:01.1:   bridge window [mem 0x6c00000000-0x7bffffffff 64bit pref]
+[    1.078385] laptop kernel: pci 0000:00:01.1: enabling Extended Tags
+[    1.078583] laptop kernel: pci 0000:00:01.1: PME# supported from D0 D3hot D3cold
+[    1.078787] laptop kernel: pci 0000:00:01.3: [1022:14ee] type 01 class 0x060400 PCIe Root Port
+[    1.078981] laptop kernel: pci 0000:00:01.3: PCI bridge to [bus 0b]
+[    1.079173] laptop kernel: pci 0000:00:01.3:   bridge window [io  0xf000-0xffff]
+[    1.079370] laptop kernel: pci 0000:00:01.3:   bridge window [mem 0xdcb00000-0xdcbfffff]
+[    1.079566] laptop kernel: pci 0000:00:01.3: enabling Extended Tags
+[    1.079762] laptop kernel: pci 0000:00:01.3: PME# supported from D0 D3hot D3cold
+[    1.079962] laptop kernel: pci 0000:00:02.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+[    1.080165] laptop kernel: pci 0000:00:02.2: [1022:14ee] type 01 class 0x060400 PCIe Root Port
+[    1.080356] laptop kernel: pci 0000:00:02.2: PCI bridge to [bus 0c]
+[    1.080550] laptop kernel: pci 0000:00:02.2:   bridge window [io  0xe000-0xefff]
+[    1.080742] laptop kernel: pci 0000:00:02.2:   bridge window [mem 0xdca00000-0xdcafffff]
+[    1.080955] laptop kernel: pci 0000:00:02.2: enabling Extended Tags
+[    1.081161] laptop kernel: pci 0000:00:02.2: PME# supported from D0 D3hot D3cold
+[    1.081377] laptop kernel: pci 0000:00:02.4: [1022:14ee] type 01 class 0x060400 PCIe Root Port
+[    1.081587] laptop kernel: pci 0000:00:02.4: PCI bridge to [bus 0d]
+[    1.081785] laptop kernel: pci 0000:00:02.4:   bridge window [mem 0xdc900000-0xdc9fffff]
+[    1.081979] laptop kernel: pci 0000:00:02.4: enabling Extended Tags
+[    1.082170] laptop kernel: pci 0000:00:02.4: PME# supported from D0 D3hot D3cold
+[    1.082371] laptop kernel: pci 0000:00:03.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+[    1.082581] laptop kernel: pci 0000:00:03.1: [1022:14ef] type 01 class 0x060400 PCIe Root Port
+[    1.082778] laptop kernel: pci 0000:00:03.1: PCI bridge to [bus 0e-6d]
+[    1.082978] laptop kernel: pci 0000:00:03.1:   bridge window [io  0x5000-0x8fff]
+[    1.083190] laptop kernel: pci 0000:00:03.1:   bridge window [mem 0xac000000-0xc3ffffff]
+[    1.083387] laptop kernel: pci 0000:00:03.1:   bridge window [mem 0x5c00000000-0x6bffffffff 64bit pref]
+[    1.083580] laptop kernel: pci 0000:00:03.1: enabling Extended Tags
+[    1.083771] laptop kernel: pci 0000:00:03.1: PME# supported from D0 D3hot D3cold
+[    1.083974] laptop kernel: pci 0000:00:04.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+[    1.084179] laptop kernel: pci 0000:00:08.0: [1022:14ea] type 00 class 0x060000 conventional PCI endpoint
+[    1.084381] laptop kernel: pci 0000:00:08.1: [1022:14eb] type 01 class 0x060400 PCIe Root Port
+[    1.084572] laptop kernel: pci 0000:00:08.1: PCI bridge to [bus 6e]
+[    1.084763] laptop kernel: pci 0000:00:08.1:   bridge window [io  0xd000-0xdfff]
+[    1.084954] laptop kernel: pci 0000:00:08.1:   bridge window [mem 0xdc000000-0xdc5fffff]
+[    1.085173] laptop kernel: pci 0000:00:08.1:   bridge window [mem 0x7c00000000-0x7c107fffff 64bit pref]
+[    1.085372] laptop kernel: pci 0000:00:08.1: enabling Extended Tags
+[    1.085567] laptop kernel: pci 0000:00:08.1: PME# supported from D0 D3hot D3cold
+[    1.085768] laptop kernel: pci 0000:00:08.2: [1022:14eb] type 01 class 0x060400 PCIe Root Port
+[    1.085959] laptop kernel: pci 0000:00:08.2: PCI bridge to [bus 6f]
+[    1.086165] laptop kernel: pci 0000:00:08.2: enabling Extended Tags
+[    1.086357] laptop kernel: pci 0000:00:08.2: PME# supported from D0 D3hot D3cold
+[    1.086557] laptop kernel: pci 0000:00:08.3: [1022:14eb] type 01 class 0x060400 PCIe Root Port
+[    1.086754] laptop kernel: pci 0000:00:08.3: PCI bridge to [bus 70]
+[    1.086945] laptop kernel: pci 0000:00:08.3:   bridge window [mem 0xdc600000-0xdc8fffff]
+[    1.087141] laptop kernel: pci 0000:00:08.3: enabling Extended Tags
+[    1.087332] laptop kernel: pci 0000:00:08.3: PME# supported from D0 D3hot D3cold
+[    1.087532] laptop kernel: pci 0000:00:14.0: [1022:790b] type 00 class 0x0c0500 conventional PCI endpoint
+[    1.087731] laptop kernel: pci 0000:00:14.3: [1022:790e] type 00 class 0x060100 conventional PCI endpoint
+[    1.087938] laptop kernel: pci 0000:00:18.0: [1022:14f0] type 00 class 0x060000 conventional PCI endpoint
+[    1.088143] laptop kernel: pci 0000:00:18.1: [1022:14f1] type 00 class 0x060000 conventional PCI endpoint
+[    1.088341] laptop kernel: pci 0000:00:18.2: [1022:14f2] type 00 class 0x060000 conventional PCI endpoint
+[    1.088541] laptop kernel: pci 0000:00:18.3: [1022:14f3] type 00 class 0x060000 conventional PCI endpoint
+[    1.088745] laptop kernel: pci 0000:00:18.4: [1022:14f4] type 00 class 0x060000 conventional PCI endpoint
+[    1.088945] laptop kernel: pci 0000:00:18.5: [1022:14f5] type 00 class 0x060000 conventional PCI endpoint
+[    1.089152] laptop kernel: pci 0000:00:18.6: [1022:14f6] type 00 class 0x060000 conventional PCI endpoint
+[    1.089349] laptop kernel: pci 0000:00:18.7: [1022:14f7] type 00 class 0x060000 conventional PCI endpoint
+[    1.089540] laptop kernel: pci 0000:00:01.1: PCI bridge to [bus 01-0a]
+[    1.089753] laptop kernel: pci 0000:0b:00.0: [10ec:8168] type 00 class 0x020000 PCIe Endpoint
+[    1.089957] laptop kernel: pci 0000:0b:00.0: BAR 0 [io  0xf000-0xf0ff]
+[    1.090166] laptop kernel: pci 0000:0b:00.0: BAR 2 [mem 0xdcb04000-0xdcb04fff 64bit]
+[    1.090367] laptop kernel: pci 0000:0b:00.0: BAR 4 [mem 0xdcb00000-0xdcb03fff 64bit]
+[    1.090580] laptop kernel: pci 0000:0b:00.0: supports D1 D2
+[    1.090788] laptop kernel: pci 0000:0b:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    1.090980] laptop kernel: pci 0000:00:01.3: PCI bridge to [bus 0b]
+[    1.091204] laptop kernel: pci 0000:0c:00.0: [10ec:b852] type 00 class 0x028000 PCIe Endpoint
+[    1.091409] laptop kernel: pci 0000:0c:00.0: BAR 0 [io  0xe000-0xe0ff]
+[    1.091609] laptop kernel: pci 0000:0c:00.0: BAR 2 [mem 0xdca00000-0xdcafffff 64bit]
+[    1.091811] laptop kernel: pci 0000:0c:00.0: PME# supported from D0 D3hot D3cold
+[    1.092016] laptop kernel: pci 0000:00:02.2: PCI bridge to [bus 0c]
+[    1.092230] laptop kernel: pci 0000:0d:00.0: [1e49:1081] type 00 class 0x010802 PCIe Endpoint
+[    1.092434] laptop kernel: pci 0000:0d:00.0: BAR 0 [mem 0xdc900000-0xdc903fff 64bit]
+[    1.092629] laptop kernel: pci 0000:00:02.4: PCI bridge to [bus 0d]
+[    1.092827] laptop kernel: pci 0000:00:03.1: PCI bridge to [bus 0e-6d]
+[    1.093054] laptop kernel: pci 0000:6e:00.0: [1002:1900] type 00 class 0x030000 PCIe Legacy Endpoint
+[    1.093272] laptop kernel: pci 0000:6e:00.0: BAR 0 [mem 0x7c00000000-0x7c0fffffff 64bit pref]
+[    1.093472] laptop kernel: pci 0000:6e:00.0: BAR 2 [mem 0xdc000000-0xdc1fffff 64bit pref]
+[    1.093683] laptop kernel: pci 0000:6e:00.0: BAR 4 [io  0xd000-0xd0ff]
+[    1.093887] laptop kernel: pci 0000:6e:00.0: BAR 5 [mem 0xdc500000-0xdc57ffff]
+[    1.094099] laptop kernel: pci 0000:6e:00.0: enabling Extended Tags
+[    1.094299] laptop kernel: pci 0000:6e:00.0: PME# supported from D1 D2 D3hot D3cold
+[    1.094508] laptop kernel: pci 0000:6e:00.1: [1002:1640] type 00 class 0x040300 PCIe Legacy Endpoint
+[    1.094708] laptop kernel: pci 0000:6e:00.1: BAR 0 [mem 0xdc5c8000-0xdc5cbfff]
+[    1.094906] laptop kernel: pci 0000:6e:00.1: enabling Extended Tags
+[    1.095109] laptop kernel: pci 0000:6e:00.1: PME# supported from D1 D2 D3hot D3cold
+[    1.095326] laptop kernel: pci 0000:6e:00.2: [1022:15c7] type 00 class 0x108000 PCIe Endpoint
+[    1.095530] laptop kernel: pci 0000:6e:00.2: BAR 2 [mem 0xdc400000-0xdc4fffff]
+[    1.095729] laptop kernel: pci 0000:6e:00.2: BAR 5 [mem 0xdc5cc000-0xdc5cdfff]
+[    1.095928] laptop kernel: pci 0000:6e:00.2: enabling Extended Tags
+[    1.096146] laptop kernel: pci 0000:6e:00.3: [1022:15b9] type 00 class 0x0c0330 PCIe Endpoint
+[    1.096348] laptop kernel: pci 0000:6e:00.3: BAR 0 [mem 0xdc300000-0xdc3fffff 64bit]
+[    1.096548] laptop kernel: pci 0000:6e:00.3: enabling Extended Tags
+[    1.096747] laptop kernel: pci 0000:6e:00.3: PME# supported from D0 D3hot D3cold
+[    1.096960] laptop kernel: pci 0000:6e:00.4: [1022:15ba] type 00 class 0x0c0330 PCIe Endpoint
+[    1.097175] laptop kernel: pci 0000:6e:00.4: BAR 0 [mem 0xdc200000-0xdc2fffff 64bit]
+[    1.097403] laptop kernel: pci 0000:6e:00.4: enabling Extended Tags
+[    1.097621] laptop kernel: pci 0000:6e:00.4: PME# supported from D0 D3hot D3cold
+[    1.097832] laptop kernel: pci 0000:6e:00.5: [1022:15e2] type 00 class 0x048000 PCIe Endpoint
+[    1.098042] laptop kernel: pci 0000:6e:00.5: BAR 0 [mem 0xdc580000-0xdc5bffff]
+[    1.098242] laptop kernel: pci 0000:6e:00.5: BAR 2 [mem 0x7c10000000-0x7c107fffff 64bit pref]
+[    1.098444] laptop kernel: pci 0000:6e:00.5: enabling Extended Tags
+[    1.098643] laptop kernel: pci 0000:6e:00.5: PME# supported from D0 D3hot D3cold
+[    1.098852] laptop kernel: pci 0000:6e:00.6: [1022:15e3] type 00 class 0x040300 PCIe Endpoint
+[    1.099056] laptop kernel: pci 0000:6e:00.6: BAR 0 [mem 0xdc5c0000-0xdc5c7fff]
+[    1.099255] laptop kernel: pci 0000:6e:00.6: enabling Extended Tags
+[    1.099455] laptop kernel: pci 0000:6e:00.6: PME# supported from D0 D3hot D3cold
+[    1.099646] laptop kernel: pci 0000:00:08.1: PCI bridge to [bus 6e]
+[    1.099859] laptop kernel: pci 0000:6f:00.0: [1022:14ec] type 00 class 0x130000 PCIe Endpoint
+[    1.100067] laptop kernel: pci 0000:6f:00.0: enabling Extended Tags
+[    1.100267] laptop kernel: pci 0000:6f:00.0: PME# supported from D3hot D3cold
+[    1.100459] laptop kernel: pci 0000:00:08.2: PCI bridge to [bus 6f]
+[    1.100673] laptop kernel: pci 0000:70:00.0: [1022:14ec] type 00 class 0x130000 PCIe Endpoint
+[    1.100874] laptop kernel: pci 0000:70:00.0: enabling Extended Tags
+[    1.101092] laptop kernel: pci 0000:70:00.3: [1022:15c0] type 00 class 0x0c0330 PCIe Endpoint
+[    1.101297] laptop kernel: pci 0000:70:00.3: BAR 0 [mem 0xdc700000-0xdc7fffff 64bit]
+[    1.101497] laptop kernel: pci 0000:70:00.3: enabling Extended Tags
+[    1.101697] laptop kernel: pci 0000:70:00.3: PME# supported from D0 D3hot D3cold
+[    1.101908] laptop kernel: pci 0000:70:00.4: [1022:15c1] type 00 class 0x0c0330 PCIe Endpoint
+[    1.102114] laptop kernel: pci 0000:70:00.4: BAR 0 [mem 0xdc600000-0xdc6fffff 64bit]
+[    1.102315] laptop kernel: pci 0000:70:00.4: enabling Extended Tags
+[    1.102515] laptop kernel: pci 0000:70:00.4: PME# supported from D0 D3hot D3cold
+[    1.102726] laptop kernel: pci 0000:70:00.5: [1022:1668] type 00 class 0x0c0340 PCIe Endpoint
+[    1.102927] laptop kernel: pci 0000:70:00.5: BAR 0 [mem 0xdc800000-0xdc87ffff 64bit]
+[    1.103131] laptop kernel: pci 0000:70:00.5: enabling Extended Tags
+[    1.103332] laptop kernel: pci 0000:70:00.5: PME# supported from D0 D3hot D3cold
+[    1.103524] laptop kernel: pci 0000:00:08.3: PCI bridge to [bus 70]
+[    1.103532] laptop kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+[    1.103539] laptop kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 0
+[    1.103545] laptop kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+[    1.103554] laptop kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+[    1.103560] laptop kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+[    1.103566] laptop kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+[    1.103573] laptop kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+[    1.103579] laptop kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+[    1.103585] laptop kernel: Low-power S0 idle used by default for system suspend
+[    1.103593] laptop kernel: ACPI BIOS Error (bug): Could not resolve symbol [\_SB.PCI0.GPP0.D1PR._OFF.D0DE], AE_NOT_FOUND (20251212/psargs-332)
+[    1.103599] laptop kernel: 
+[    1.103608] laptop kernel: No Local Variables are initialized for Method [_OFF]
+[    1.103615] laptop kernel: 
+[    1.103621] laptop kernel: No Arguments are initialized for method [_OFF]
+[    1.103627] laptop kernel: 
+[    1.103633] laptop kernel: ACPI Error: Aborting method \_SB.PCI0.GPP0.D1PR._OFF due to previous error (AE_NOT_FOUND) (20251212/psparse-529)
+[    1.103640] laptop kernel: ACPI: EC: interrupt unblocked
+[    1.103646] laptop kernel: ACPI: EC: event unblocked
+[    1.103652] laptop kernel: ACPI: EC: EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    1.103659] laptop kernel: ACPI: EC: GPE=0xa
+[    1.103665] laptop kernel: ACPI: \_SB_.PCI0.SBRG.H_EC: Boot DSDT EC initialization complete
+[    1.103674] laptop kernel: ACPI: \_SB_.PCI0.SBRG.H_EC: EC: Used to handle transactions and events
+[    1.103680] laptop kernel: iommu: Default domain type: Translated
+[    1.103687] laptop kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+[    1.103693] laptop kernel: SCSI subsystem initialized
+[    1.103700] laptop kernel: libata version 3.00 loaded.
+[    1.103706] laptop kernel: ACPI: bus type USB registered
+[    1.103712] laptop kernel: usbcore: registered new interface driver usbfs
+[    1.103718] laptop kernel: usbcore: registered new interface driver hub
+[    1.103724] laptop kernel: usbcore: registered new device driver usb
+[    1.103729] laptop kernel: pps_core: LinuxPPS API ver. 1 registered
+[    1.103736] laptop kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.103744] laptop kernel: PTP clock support registered
+[    1.103751] laptop kernel: EDAC MC: Ver: 3.0.0
+[    1.103757] laptop kernel: efivars: Registered efivars operations
+[    1.103763] laptop kernel: NetLabel: Initializing
+[    1.103770] laptop kernel: NetLabel:  domain hash size = 128
+[    1.103776] laptop kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    1.103783] laptop kernel: NetLabel:  unlabeled traffic allowed by default
+[    1.103789] laptop kernel: mctp: management component transport protocol core
+[    1.103795] laptop kernel: NET: Registered PF_MCTP protocol family
+[    1.103803] laptop kernel: PCI: Using ACPI for IRQ routing
+[    1.103809] laptop kernel: PCI: pci_cache_line_size set to 64 bytes
+[    1.103815] laptop kernel: e820: register RAM buffer resource [mem 0x09a7f000-0x0bffffff]
+[    1.103822] laptop kernel: e820: register RAM buffer resource [mem 0x0a200000-0x0bffffff]
+[    1.103828] laptop kernel: e820: register RAM buffer resource [mem 0x8cf8b000-0x8fffffff]
+[    1.103835] laptop kernel: e820: register RAM buffer resource [mem 0x9114c000-0x93ffffff]
+[    1.103841] laptop kernel: e820: register RAM buffer resource [mem 0x921c5000-0x93ffffff]
+[    1.103847] laptop kernel: e820: register RAM buffer resource [mem 0x99ff9000-0x9bffffff]
+[    1.103853] laptop kernel: e820: register RAM buffer resource [mem 0x99fff000-0x9bffffff]
+[    1.103862] laptop kernel: e820: register RAM buffer resource [mem 0x81e300000-0x81fffffff]
+[    1.104069] laptop kernel: pci 0000:6e:00.0: vgaarb: setting as boot VGA device
+[    1.104272] laptop kernel: pci 0000:6e:00.0: vgaarb: bridge control possible
+[    1.104471] laptop kernel: pci 0000:6e:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+[    1.104479] laptop kernel: vgaarb: loaded
+[    1.104484] laptop kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[    1.104490] laptop kernel: hpet0: 3 comparators, 32-bit 14.318180 MHz counter
+[    1.104496] laptop kernel: clocksource: Switched to clocksource tsc-early
+[    1.104502] laptop kernel: VFS: Disk quotas dquot_6.6.0
+[    1.104509] laptop kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    1.104515] laptop kernel: AppArmor: AppArmor Filesystem Enabled
+[    1.104748] laptop kernel: acpi PNP0C01:00: Reserved [mem 0xe0000000-0xefffffff]
+[    1.104983] laptop kernel: acpi PNP0C02:00: Reserved [mem 0xfd300000-0xfd3fffff]
+[    1.105212] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0010-0x001f]
+[    1.105420] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0022-0x003f]
+[    1.105628] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0063]
+[    1.105835] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0065]
+[    1.106046] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0067-0x006f]
+[    1.106257] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0072-0x007f]
+[    1.106467] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0080]
+[    1.106683] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0084-0x0086]
+[    1.106902] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0088]
+[    1.107122] laptop kernel: acpi PNP0C02:01: Skipped [io  0x008c-0x008e]
+[    1.107332] laptop kernel: acpi PNP0C02:01: Skipped [io  0x0090-0x009f]
+[    1.107539] laptop kernel: acpi PNP0C02:01: Skipped [io  0x00a2-0x00bf]
+[    1.107745] laptop kernel: acpi PNP0C02:01: Skipped [io  0x00b1]
+[    1.107951] laptop kernel: acpi PNP0C02:01: Skipped [io  0x00e0-0x00ef]
+[    1.108163] laptop kernel: acpi PNP0C02:01: Reserved [io  0x04d0-0x04d1]
+[    1.108371] laptop kernel: acpi PNP0C02:01: Reserved [io  0x040b]
+[    1.108576] laptop kernel: acpi PNP0C02:01: Reserved [io  0x04d6]
+[    1.108781] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0c00-0x0c01]
+[    1.108986] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0c14]
+[    1.109197] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0c50-0x0c51]
+[    1.109402] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0c52]
+[    1.109616] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0c6c]
+[    1.109822] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0c6f]
+[    1.110038] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0cd0-0x0cd1]
+[    1.110247] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0cd2-0x0cd3]
+[    1.110452] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0cd4-0x0cd5]
+[    1.110658] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0cd6-0x0cd7]
+[    1.110865] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0cd8-0x0cdf]
+[    1.111079] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0800-0x089f]
+[    1.111289] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0b00-0x0b0f]
+[    1.111497] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0b20-0x0b3f]
+[    1.111708] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0900-0x090f]
+[    1.111919] laptop kernel: acpi PNP0C02:01: Reserved [io  0x0910-0x091f]
+[    1.112133] laptop kernel: acpi PNP0C02:01: Could not reserve [mem 0xfec00000-0xfec00fff]
+[    1.112340] laptop kernel: acpi PNP0C02:01: Could not reserve [mem 0xfec01000-0xfec01fff]
+[    1.112547] laptop kernel: acpi PNP0C02:01: Reserved [mem 0xfedc0000-0xfedc0fff]
+[    1.112755] laptop kernel: acpi PNP0C02:01: Reserved [mem 0xfee00000-0xfee00fff]
+[    1.112961] laptop kernel: acpi PNP0C02:01: Could not reserve [mem 0xfed80000-0xfed8ffff]
+[    1.113171] laptop kernel: acpi PNP0C02:01: Reserved [mem 0xfec10000-0xfec10fff]
+[    1.113379] laptop kernel: acpi PNP0C02:01: Reserved [mem 0xff000000-0xffffffff]
+[    1.113387] laptop kernel: pnp: PnP ACPI init
+[    1.113394] laptop kernel: pnp: PnP ACPI: found 2 devices
+[    1.113401] laptop kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    1.113407] laptop kernel: NET: Registered PF_INET protocol family
+[    1.113414] laptop kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    1.113420] laptop kernel: tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    1.113427] laptop kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    1.113436] laptop kernel: TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    1.113442] laptop kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    1.113448] laptop kernel: TCP: Hash tables configured (established 262144 bind 65536)
+[    1.113455] laptop kernel: MPTCP token hash table entries: 32768 (order: 8, 786432 bytes, linear)
+[    1.113461] laptop kernel: UDP hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+[    1.113467] laptop kernel: UDP-Lite hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+[    1.113474] laptop kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    1.113480] laptop kernel: NET: Registered PF_XDP protocol family
+[    1.113682] laptop kernel: pci 0000:00:01.1: PCI bridge to [bus 01-0a]
+[    1.113877] laptop kernel: pci 0000:00:01.1:   bridge window [io  0x9000-0xcfff]
+[    1.114077] laptop kernel: pci 0000:00:01.1:   bridge window [mem 0xc4000000-0xdbffffff]
+[    1.114270] laptop kernel: pci 0000:00:01.1:   bridge window [mem 0x6c00000000-0x7bffffffff 64bit pref]
+[    1.114463] laptop kernel: pci 0000:00:01.3: PCI bridge to [bus 0b]
+[    1.114654] laptop kernel: pci 0000:00:01.3:   bridge window [io  0xf000-0xffff]
+[    1.114845] laptop kernel: pci 0000:00:01.3:   bridge window [mem 0xdcb00000-0xdcbfffff]
+[    1.115040] laptop kernel: pci 0000:00:02.2: PCI bridge to [bus 0c]
+[    1.115232] laptop kernel: pci 0000:00:02.2:   bridge window [io  0xe000-0xefff]
+[    1.115423] laptop kernel: pci 0000:00:02.2:   bridge window [mem 0xdca00000-0xdcafffff]
+[    1.115615] laptop kernel: pci 0000:00:02.4: PCI bridge to [bus 0d]
+[    1.115808] laptop kernel: pci 0000:00:02.4:   bridge window [mem 0xdc900000-0xdc9fffff]
+[    1.116001] laptop kernel: pci 0000:00:03.1: PCI bridge to [bus 0e-6d]
+[    1.116194] laptop kernel: pci 0000:00:03.1:   bridge window [io  0x5000-0x8fff]
+[    1.116385] laptop kernel: pci 0000:00:03.1:   bridge window [mem 0xac000000-0xc3ffffff]
+[    1.116577] laptop kernel: pci 0000:00:03.1:   bridge window [mem 0x5c00000000-0x6bffffffff 64bit pref]
+[    1.116768] laptop kernel: pci 0000:00:08.1: PCI bridge to [bus 6e]
+[    1.116959] laptop kernel: pci 0000:00:08.1:   bridge window [io  0xd000-0xdfff]
+[    1.117154] laptop kernel: pci 0000:00:08.1:   bridge window [mem 0xdc000000-0xdc5fffff]
+[    1.117346] laptop kernel: pci 0000:00:08.1:   bridge window [mem 0x7c00000000-0x7c107fffff 64bit pref]
+[    1.117545] laptop kernel: pci 0000:00:08.2: PCI bridge to [bus 6f]
+[    1.117737] laptop kernel: pci 0000:00:08.3: PCI bridge to [bus 70]
+[    1.117934] laptop kernel: pci 0000:00:08.3:   bridge window [mem 0xdc600000-0xdc8fffff]
+[    1.118130] laptop kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x03af window]
+[    1.118313] laptop kernel: pci_bus 0000:00: resource 5 [io  0x03e0-0x0cf7 window]
+[    1.118495] laptop kernel: pci_bus 0000:00: resource 6 [io  0x03b0-0x03df window]
+[    1.118677] laptop kernel: pci_bus 0000:00: resource 7 [io  0x0d00-0xffff window]
+[    1.118859] laptop kernel: pci_bus 0000:00: resource 8 [mem 0x000a0000-0x000dffff window]
+[    1.119045] laptop kernel: pci_bus 0000:00: resource 9 [mem 0xfa000000-0xfcffffff window]
+[    1.119227] laptop kernel: pci_bus 0000:00: resource 10 [mem 0xf0000000-0xf9ffffff window]
+[    1.119412] laptop kernel: pci_bus 0000:00: resource 11 [mem 0xa0000000-0xdfffffff window]
+[    1.119594] laptop kernel: pci_bus 0000:00: resource 12 [mem 0x860000000-0x7fffffffff window]
+[    1.119808] laptop kernel: pci_bus 0000:01: resource 0 [io  0x9000-0xcfff]
+[    1.120003] laptop kernel: pci_bus 0000:01: resource 1 [mem 0xc4000000-0xdbffffff]
+[    1.120209] laptop kernel: pci_bus 0000:01: resource 2 [mem 0x6c00000000-0x7bffffffff 64bit pref]
+[    1.120411] laptop kernel: pci_bus 0000:0b: resource 0 [io  0xf000-0xffff]
+[    1.120604] laptop kernel: pci_bus 0000:0b: resource 1 [mem 0xdcb00000-0xdcbfffff]
+[    1.120810] laptop kernel: pci_bus 0000:0c: resource 0 [io  0xe000-0xefff]
+[    1.121004] laptop kernel: pci_bus 0000:0c: resource 1 [mem 0xdca00000-0xdcafffff]
+[    1.121215] laptop kernel: pci_bus 0000:0d: resource 1 [mem 0xdc900000-0xdc9fffff]
+[    1.121421] laptop kernel: pci_bus 0000:0e: resource 0 [io  0x5000-0x8fff]
+[    1.121613] laptop kernel: pci_bus 0000:0e: resource 1 [mem 0xac000000-0xc3ffffff]
+[    1.121813] laptop kernel: pci_bus 0000:0e: resource 2 [mem 0x5c00000000-0x6bffffffff 64bit pref]
+[    1.122019] laptop kernel: pci_bus 0000:6e: resource 0 [io  0xd000-0xdfff]
+[    1.122217] laptop kernel: pci_bus 0000:6e: resource 1 [mem 0xdc000000-0xdc5fffff]
+[    1.122410] laptop kernel: pci_bus 0000:6e: resource 2 [mem 0x7c00000000-0x7c107fffff 64bit pref]
+[    1.122613] laptop kernel: pci_bus 0000:70: resource 1 [mem 0xdc600000-0xdc8fffff]
+[    1.122816] laptop kernel: pci 0000:6e:00.1: D0 power state depends on 0000:6e:00.0
+[    1.122824] laptop kernel: PCI: CLS 64 bytes, default 64
+[    1.123020] laptop kernel: pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+[    1.123028] laptop kernel: Trying to unpack rootfs image as initramfs...
+[    1.123225] laptop kernel: pci 0000:00:01.0: Adding to iommu group 0
+[    1.123418] laptop kernel: pci 0000:00:01.1: Adding to iommu group 1
+[    1.123609] laptop kernel: pci 0000:00:01.3: Adding to iommu group 2
+[    1.123802] laptop kernel: pci 0000:00:02.0: Adding to iommu group 3
+[    1.123993] laptop kernel: pci 0000:00:02.2: Adding to iommu group 4
+[    1.124196] laptop kernel: pci 0000:00:02.4: Adding to iommu group 5
+[    1.124388] laptop kernel: pci 0000:00:03.0: Adding to iommu group 6
+[    1.124580] laptop kernel: pci 0000:00:03.1: Adding to iommu group 6
+[    1.124772] laptop kernel: pci 0000:00:04.0: Adding to iommu group 7
+[    1.124966] laptop kernel: pci 0000:00:08.0: Adding to iommu group 8
+[    1.125171] laptop kernel: pci 0000:00:08.1: Adding to iommu group 9
+[    1.125361] laptop kernel: pci 0000:00:08.2: Adding to iommu group 10
+[    1.125560] laptop kernel: pci 0000:00:08.3: Adding to iommu group 11
+[    1.125754] laptop kernel: pci 0000:00:14.0: Adding to iommu group 12
+[    1.125951] laptop kernel: pci 0000:00:14.3: Adding to iommu group 12
+[    1.126150] laptop kernel: pci 0000:00:18.0: Adding to iommu group 13
+[    1.126342] laptop kernel: pci 0000:00:18.1: Adding to iommu group 13
+[    1.126536] laptop kernel: pci 0000:00:18.2: Adding to iommu group 13
+[    1.126734] laptop kernel: pci 0000:00:18.3: Adding to iommu group 13
+[    1.126926] laptop kernel: pci 0000:00:18.4: Adding to iommu group 13
+[    1.127121] laptop kernel: pci 0000:00:18.5: Adding to iommu group 13
+[    1.127313] laptop kernel: pci 0000:00:18.6: Adding to iommu group 13
+[    1.127504] laptop kernel: pci 0000:00:18.7: Adding to iommu group 13
+[    1.127705] laptop kernel: pci 0000:0b:00.0: Adding to iommu group 14
+[    1.127910] laptop kernel: pci 0000:0c:00.0: Adding to iommu group 15
+[    1.128117] laptop kernel: pci 0000:0d:00.0: Adding to iommu group 16
+[    1.128319] laptop kernel: pci 0000:6e:00.0: Adding to iommu group 17
+[    1.128517] laptop kernel: pci 0000:6e:00.1: Adding to iommu group 18
+[    1.128718] laptop kernel: pci 0000:6e:00.2: Adding to iommu group 19
+[    1.128921] laptop kernel: pci 0000:6e:00.3: Adding to iommu group 20
+[    1.129133] laptop kernel: pci 0000:6e:00.4: Adding to iommu group 21
+[    1.129335] laptop kernel: pci 0000:6e:00.5: Adding to iommu group 22
+[    1.129538] laptop kernel: pci 0000:6e:00.6: Adding to iommu group 23
+[    1.129738] laptop kernel: pci 0000:6f:00.0: Adding to iommu group 24
+[    1.129937] laptop kernel: pci 0000:70:00.0: Adding to iommu group 25
+[    1.130148] laptop kernel: pci 0000:70:00.3: Adding to iommu group 26
+[    1.130352] laptop kernel: pci 0000:70:00.4: Adding to iommu group 27
+[    1.130561] laptop kernel: pci 0000:70:00.5: Adding to iommu group 28
+[    1.130569] laptop kernel: AMD-Vi: Extended features (0x246577efa2054ada, 0x0): PPR NX GT IA GA PC
+[    1.130575] laptop kernel: AMD-Vi: Interrupt remapping enabled
+[    1.130582] laptop kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    1.130591] laptop kernel: software IO TLB: mapped [mem 0x0000000082327000-0x0000000086327000] (64MB)
+[    1.130597] laptop kernel: LVT offset 0 assigned for vector 0x400
+[    1.130604] laptop kernel: perf: AMD IBS detected (0x00000bff)
+[    1.130610] laptop kernel: perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+[    1.130617] laptop kernel: Initialise system trusted keyrings
+[    1.130623] laptop kernel: Key type blacklist registered
+[    1.130630] laptop kernel: workingset: timestamp_bits=36 max_order=23 bucket_order=0
+[    1.130636] laptop kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.130642] laptop kernel: fuse: init (API version 7.45)
+[    1.130651] laptop kernel: integrity: Platform Keyring initialized
+[    1.130657] laptop kernel: integrity: Machine keyring initialized
+[    1.130663] laptop kernel: Key type asymmetric registered
+[    1.130670] laptop kernel: Asymmetric key parser 'x509' registered
+[    1.130676] laptop kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    1.130683] laptop kernel: io scheduler mq-deadline registered
+[    1.130689] laptop kernel: ledtrig-cpu: registered to indicate activity on CPUs
+[    1.130882] laptop kernel: pcieport 0000:00:01.1: PME: Signaling with IRQ 37
+[    1.131086] laptop kernel: pcieport 0000:00:01.1: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[    1.131282] laptop kernel: pcieport 0000:00:01.3: PME: Signaling with IRQ 38
+[    1.131472] laptop kernel: pcieport 0000:00:02.2: PME: Signaling with IRQ 39
+[    1.131662] laptop kernel: pcieport 0000:00:02.4: PME: Signaling with IRQ 40
+[    1.131852] laptop kernel: pcieport 0000:00:03.1: PME: Signaling with IRQ 41
+[    1.132047] laptop kernel: pcieport 0000:00:03.1: pciehp: Slot #0 AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surprise+ Interlock- NoCompl+ IbPresDis- LLActRep+
+[    1.132238] laptop kernel: pcieport 0000:00:08.1: PME: Signaling with IRQ 42
+[    1.132431] laptop kernel: pcieport 0000:00:08.2: PME: Signaling with IRQ 43
+[    1.132621] laptop kernel: pcieport 0000:00:08.3: PME: Signaling with IRQ 44
+[    1.132628] laptop kernel: ACPI: AC: AC Adapter [ADP1] (off-line)
+[    1.132635] laptop kernel: input: Power Button as /devices/platform/PNP0C0C:00/input/input0
+[    1.132641] laptop kernel: ACPI: button: Power Button [PWRB]
+[    1.132648] laptop kernel: input: Lid Switch as /devices/pci0000:00/0000:00:14.3/PNP0C09:00/PNP0C0D:00/input/input1
+[    1.132654] laptop kernel: ACPI: button: Lid Switch [LID0]
+[    1.132661] laptop kernel: Monitor-Mwait will be used to enter C-1 state
+[    1.132670] laptop kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1181
+[    1.132887] laptop kernel: acpi LNXTHERM:00: registered as thermal_zone0
+[    1.132895] laptop kernel: ACPI: thermal: Thermal Zone [TZ01] (67 C)
+[    1.132902] laptop kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    1.132908] laptop kernel: Linux agpgart interface v0.103
+[    1.132914] laptop kernel: ACPI: battery: Slot [BAT0] (battery present)
+[    1.132921] laptop kernel: loop: module loaded
+[    1.132927] laptop kernel: ACPI: bus type drm_connector registered
+[    1.132934] laptop kernel: tun: Universal TUN/TAP device driver, 1.6
+[    1.132942] laptop kernel: PPP generic driver version 2.4.2
+[    1.132949] laptop kernel: Freeing initrd memory: 40324K
+[    1.133157] laptop kernel: xhci_hcd 0000:6e:00.3: xHCI Host Controller
+[    1.133357] laptop kernel: xhci_hcd 0000:6e:00.3: new USB bus registered, assigned bus number 1
+[    1.133557] laptop kernel: xhci_hcd 0000:6e:00.3: hcc params 0x0128ffc5 hci version 0x120 quirks 0x0000000200000010
+[    1.133757] laptop kernel: xhci_hcd 0000:6e:00.3: xHCI Host Controller
+[    1.133958] laptop kernel: xhci_hcd 0000:6e:00.3: new USB bus registered, assigned bus number 2
+[    1.134167] laptop kernel: xhci_hcd 0000:6e:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.134346] laptop kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.00
+[    1.134507] laptop kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.134664] laptop kernel: usb usb1: Product: xHCI Host Controller
+[    1.134821] laptop kernel: usb usb1: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.134976] laptop kernel: usb usb1: SerialNumber: 0000:6e:00.3
+[    1.135230] laptop kernel: hub 1-0:1.0: USB hub found
+[    1.135454] laptop kernel: hub 1-0:1.0: 5 ports detected
+[    1.135683] laptop kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.135848] laptop kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.00
+[    1.136011] laptop kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.136170] laptop kernel: usb usb2: Product: xHCI Host Controller
+[    1.136330] laptop kernel: usb usb2: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.136487] laptop kernel: usb usb2: SerialNumber: 0000:6e:00.3
+[    1.136719] laptop kernel: hub 2-0:1.0: USB hub found
+[    1.136943] laptop kernel: hub 2-0:1.0: 2 ports detected
+[    1.137159] laptop kernel: xhci_hcd 0000:6e:00.4: xHCI Host Controller
+[    1.137362] laptop kernel: xhci_hcd 0000:6e:00.4: new USB bus registered, assigned bus number 3
+[    1.137566] laptop kernel: xhci_hcd 0000:6e:00.4: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+[    1.137768] laptop kernel: xhci_hcd 0000:6e:00.4: xHCI Host Controller
+[    1.137967] laptop kernel: xhci_hcd 0000:6e:00.4: new USB bus registered, assigned bus number 4
+[    1.138171] laptop kernel: xhci_hcd 0000:6e:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.138338] laptop kernel: usb usb3: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.00
+[    1.138500] laptop kernel: usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.138658] laptop kernel: usb usb3: Product: xHCI Host Controller
+[    1.138812] laptop kernel: usb usb3: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.138967] laptop kernel: usb usb3: SerialNumber: 0000:6e:00.4
+[    1.139203] laptop kernel: hub 3-0:1.0: USB hub found
+[    1.139425] laptop kernel: hub 3-0:1.0: 1 port detected
+[    1.139650] laptop kernel: usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.139815] laptop kernel: usb usb4: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.00
+[    1.139975] laptop kernel: usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.140135] laptop kernel: usb usb4: Product: xHCI Host Controller
+[    1.140292] laptop kernel: usb usb4: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.140448] laptop kernel: usb usb4: SerialNumber: 0000:6e:00.4
+[    1.140679] laptop kernel: hub 4-0:1.0: USB hub found
+[    1.140902] laptop kernel: hub 4-0:1.0: 1 port detected
+[    1.141107] laptop kernel: xhci_hcd 0000:70:00.3: xHCI Host Controller
+[    1.141307] laptop kernel: xhci_hcd 0000:70:00.3: new USB bus registered, assigned bus number 5
+[    1.141507] laptop kernel: xhci_hcd 0000:70:00.3: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+[    1.141706] laptop kernel: xhci_hcd 0000:70:00.3: xHCI Host Controller
+[    1.141906] laptop kernel: xhci_hcd 0000:70:00.3: new USB bus registered, assigned bus number 6
+[    1.142111] laptop kernel: xhci_hcd 0000:70:00.3: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.142286] laptop kernel: usb usb5: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.00
+[    1.142446] laptop kernel: usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.142602] laptop kernel: usb usb5: Product: xHCI Host Controller
+[    1.142757] laptop kernel: usb usb5: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.142911] laptop kernel: usb usb5: SerialNumber: 0000:70:00.3
+[    1.143157] laptop kernel: hub 5-0:1.0: USB hub found
+[    1.143379] laptop kernel: hub 5-0:1.0: 1 port detected
+[    1.143604] laptop kernel: usb usb6: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.143767] laptop kernel: usb usb6: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.00
+[    1.143924] laptop kernel: usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.144091] laptop kernel: usb usb6: Product: xHCI Host Controller
+[    1.144252] laptop kernel: usb usb6: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.144408] laptop kernel: usb usb6: SerialNumber: 0000:70:00.3
+[    1.144639] laptop kernel: hub 6-0:1.0: USB hub found
+[    1.144860] laptop kernel: hub 6-0:1.0: 1 port detected
+[    1.145068] laptop kernel: xhci_hcd 0000:70:00.4: xHCI Host Controller
+[    1.145272] laptop kernel: xhci_hcd 0000:70:00.4: new USB bus registered, assigned bus number 7
+[    1.145473] laptop kernel: xhci_hcd 0000:70:00.4: hcc params 0x0110ffc5 hci version 0x120 quirks 0x0000000200000010
+[    1.145672] laptop kernel: xhci_hcd 0000:70:00.4: xHCI Host Controller
+[    1.145871] laptop kernel: xhci_hcd 0000:70:00.4: new USB bus registered, assigned bus number 8
+[    1.146077] laptop kernel: xhci_hcd 0000:70:00.4: Host supports USB 3.1 Enhanced SuperSpeed
+[    1.146249] laptop kernel: usb usb7: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 7.00
+[    1.146409] laptop kernel: usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.146565] laptop kernel: usb usb7: Product: xHCI Host Controller
+[    1.146721] laptop kernel: usb usb7: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.146877] laptop kernel: usb usb7: SerialNumber: 0000:70:00.4
+[    1.147117] laptop kernel: hub 7-0:1.0: USB hub found
+[    1.147341] laptop kernel: hub 7-0:1.0: 1 port detected
+[    1.147565] laptop kernel: usb usb8: We don't know the algorithms for LPM for this host, disabling LPM.
+[    1.147728] laptop kernel: usb usb8: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 7.00
+[    1.147891] laptop kernel: usb usb8: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.148053] laptop kernel: usb usb8: Product: xHCI Host Controller
+[    1.148211] laptop kernel: usb usb8: Manufacturer: Linux 7.0.0-38-generic xhci-hcd
+[    1.148368] laptop kernel: usb usb8: SerialNumber: 0000:70:00.4
+[    1.148600] laptop kernel: hub 8-0:1.0: USB hub found
+[    1.148823] laptop kernel: hub 8-0:1.0: 1 port detected
+[    1.148831] laptop kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+[    1.148840] laptop kernel: i8042: PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+[    1.148847] laptop kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+[    1.148854] laptop kernel: mousedev: PS/2 mouse device common for all mice
+[    1.149064] laptop kernel: rtc_cmos 00:00: RTC can wake from S4
+[    1.149252] laptop kernel: rtc_cmos 00:00: registered as rtc0
+[    1.149437] laptop kernel: rtc_cmos 00:00: setting system clock to 2026-10-26T00:08:30 UTC (1792973310)
+[    1.149622] laptop kernel: rtc_cmos 00:00: alarms up to one month, y3k, 114 bytes nvram
+[    1.149632] laptop kernel: i2c_dev: i2c /dev entries driver
+[    1.149639] laptop kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+[    1.149645] laptop kernel: device-mapper: uevent: version 1.0.3
+[    1.149651] laptop kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[    1.149658] laptop kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    1.149888] laptop kernel: simple-framebuffer simple-framebuffer.0: [drm] Registered 1 planes with drm panic
+[    1.149897] laptop kernel: [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+[    1.149903] laptop kernel: fbcon: Deferring console take-over
+[    1.150117] laptop kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+[    1.150125] laptop kernel: drop_monitor: Initializing network drop monitor service
+[    1.150132] laptop kernel: NET: Registered PF_INET6 protocol family
+[    1.150138] laptop kernel: Segment Routing with IPv6
+[    1.150144] laptop kernel: In-situ OAM (IOAM) with IPv6
+[    1.150150] laptop kernel: NET: Registered PF_PACKET protocol family
+[    1.150157] laptop kernel: Key type dns_resolver registered
+[    1.150163] laptop kernel: x86/amd: Previous system reset reason [0x00080800]: software wrote 0x6 to reset control register 0xCF9
+[    1.150173] laptop kernel: microcode: Current revision: 0x0a70520a
+[    1.150179] laptop kernel: resctrl: L3 allocation detected
+[    1.150185] laptop kernel: resctrl: MB allocation detected
+[    1.150191] laptop kernel: resctrl: SMBA allocation detected
+[    1.150197] laptop kernel: resctrl: L3 monitoring detected
+[    1.150204] laptop kernel: IPI shorthand broadcast: enabled
+[    1.150210] laptop kernel: sched_clock: Marking stable (710765177, 1353350)->(729003907, -16885380)
+[    1.150217] laptop kernel: registered taskstats version 1
+[    1.150223] laptop kernel: Loading compiled-in X.509 certificates
+[    1.150231] laptop kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 6b2b0d62fc3a1216c49fda2b061b13d4dbf474bd'
+[    1.150238] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing 2025 Kmod: d541cef61dc7e793b7eb7e899970a2eef0b5dc8c'
+[    1.150244] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+[    1.150251] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing 2025 Kmod: 4627603d2357a2a3f81006370894c221175893e9'
+[    1.150257] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+[    1.150264] laptop kernel: blacklist: Loading compiled-in revocation X.509 certificates
+[    1.150270] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+[    1.150277] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2017): 242ade75ac4a15e50d50c84b0d45ff3eae707a03'
+[    1.150285] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (ESM 2018): 365188c1d374d6b07c3c8f240f8ef722433d6a8b'
+[    1.150292] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2019): c0746fd6c5da3ae827864651ad66ae47fe24b3e8'
+[    1.150298] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v1): a8d54bbb3825cfb94fa13c9f8a594a195c107b8d'
+[    1.150304] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v2): 4cf046892d6fd3c9a5b03f98d845f90851dc6a8c'
+[    1.150311] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (2021 v3): 100437bb6de6e469b581e61cd66bce3ef4ed53af'
+[    1.150317] laptop kernel: Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing (Ubuntu Core 2019): c1d57b8f6b743f23ee41f4f7ee292f06eecadfb9'
+[    1.150324] laptop kernel: Demotion targets for Node 0: null
+[    1.150330] laptop kernel: Key type .fscrypt registered
+[    1.150338] laptop kernel: Key type fscrypt-provisioning registered
+[    1.150345] laptop kernel: Key type big_key registered
+[    1.150351] laptop kernel: Key type trusted registered
+[    1.150357] laptop kernel: Key type encrypted registered
+[    1.150364] laptop kernel: AppArmor: AppArmor sha256 policy hashing enabled
+[    1.150370] laptop kernel: Loading compiled-in module X.509 certificates
+[    1.150377] laptop kernel: Loaded X.509 cert 'Build time autogenerated kernel key: 6b2b0d62fc3a1216c49fda2b061b13d4dbf474bd'
+[    1.150383] laptop kernel: ima: Allocated hash algorithm: sha256
+[    1.150389] laptop kernel: audit: type=1807 audit(1792973310.602:2): action=measure func=KEXEC_KERNEL_CHECK res=1
+[    1.150398] laptop kernel: evm: Initialising EVM extended attributes:
+[    1.150404] laptop kernel: audit: type=1807 audit(1792973310.602:3): action=measure func=MODULE_CHECK res=1
+[    1.150411] laptop kernel: evm: security.selinux
+[    1.150417] laptop kernel: evm: security.SMACK64
+[    1.150423] laptop kernel: evm: security.SMACK64EXEC
+[    1.150430] laptop kernel: evm: security.SMACK64TRANSMUTE
+[    1.150436] laptop kernel: evm: security.SMACK64MMAP
+[    1.150442] laptop kernel: evm: security.apparmor
+[    1.150449] laptop kernel: evm: security.ima
+[    1.150457] laptop kernel: evm: security.capability
+[    1.150464] laptop kernel: evm: HMAC attrs: 0x1
+[    1.150470] laptop kernel: integrity: Loading X.509 certificate: UEFI:db
+[    1.150476] laptop kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+[    1.150483] laptop kernel: integrity: Loading X.509 certificate: UEFI:db
+[    1.150489] laptop kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+[    1.150496] laptop kernel: integrity: Loading X.509 certificate: UEFI:db
+[    1.150502] laptop kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+[    1.150508] laptop kernel: integrity: Loading X.509 certificate: UEFI:db
+[    1.150516] laptop kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+[    1.150523] laptop kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+[    1.150529] laptop kernel: integrity: Loaded X.509 cert 'Canonical Ltd. Master Certificate Authority: ad91990bc22ab1f517048c23b6655a268e345a63'
+[    1.150535] laptop kernel: PM:   Magic number: 14:41:103
+[    1.150748] laptop kernel: memory memory252: hash matches
+[    1.150757] laptop kernel: RAS: Correctable Errors collector initialized.
+[    1.150763] laptop kernel: Lockdown: swapper/0: hibernation is restricted; see man kernel_lockdown.7
+[    1.150770] laptop kernel: clk: Disabling unused clocks
+[    1.150778] laptop kernel: PM: genpd: Disabling unused power domains
+[    1.150784] laptop kernel: Freeing unused decrypted memory: 2028K
+[    1.150790] laptop kernel: Freeing unused kernel image (initmem) memory: 5304K
+[    1.150797] laptop kernel: Write protecting the kernel read-only data: 43008k
+[    1.150803] laptop kernel: Freeing unused kernel image (text/rodata gap) memory: 736K
+[    1.150809] laptop kernel: Freeing unused kernel image (rodata/data gap) memory: 1656K
+[    1.150816] laptop kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.150822] laptop kernel: Run /init as init process
+[    1.150831] laptop kernel:   with arguments:
+[    1.150837] laptop kernel:     /init
+[    1.150843] laptop kernel:     splash
+[    1.150850] laptop kernel:   with environment:
+[    1.150856] laptop kernel:     HOME=/
+[    1.150862] laptop kernel:     TERM=linux
+[    1.150870] laptop systemd[1]: Inserted module 'autofs4'
+[    1.150878] laptop systemd[1]: Successfully made /usr/ read-only.
+[    1.150887] laptop systemd[1]: systemd 259.9-0ubuntu0.1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[    1.150896] laptop systemd[1]: Detected architecture x86-64.
+[    1.150903] laptop systemd[1]: Running in initrd.
+[    1.150910] laptop systemd[1]: Hostname set to <laptop>.
+[    1.151164] laptop kernel: usb 1-2: new high-speed USB device number 2 using xhci_hcd
+[    1.151402] laptop kernel: usb 3-1: new high-speed USB device number 2 using xhci_hcd
+[    1.151412] laptop systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[    1.151583] laptop kernel: usb 1-2: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice= 6.63
+[    1.151750] laptop kernel: usb 1-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.151916] laptop kernel: usb 1-2: Product: USB2.1 Hub
+[    1.152086] laptop kernel: usb 1-2: Manufacturer: GenesysLogic
+[    1.152097] laptop systemd[1]: Queued start job for default target initrd.target.
+[    1.152105] laptop systemd[1]: Expecting device dev-disk-by\x2duuid-4CA3\x2d9D73.device - /dev/disk/by-uuid/4CA3-9D73...
+[    1.152113] laptop systemd[1]: Expecting device dev-disk-by\x2duuid-ROOT-UUID\x2d2ffc\x2d4d9c\x2d8c1a\x2d0629678e4e83.device - /dev/disk/by-uuid/ROOT-UUID...
+[    1.152120] laptop systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.
+[    1.152130] laptop systemd[1]: Reached target slices.target - Slice Units.
+[    1.152136] laptop systemd[1]: Reached target swap.target - Swaps.
+[    1.152144] laptop systemd[1]: Reached target timers.target - Timer Units.
+[    1.152153] laptop systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[    1.152160] laptop systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[    1.152166] laptop systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    1.152173] laptop systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[    1.152180] laptop systemd[1]: Reached target sockets.target - Socket Units.
+[    1.152189] laptop systemd[1]: Starting dracut-cmdline-ask.service - dracut ask for additional cmdline parameters...
+[    1.152199] laptop systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    1.152207] laptop systemd[1]: Starting systemd-journald.service - Journal Service...
+[    1.152214] laptop systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    1.152221] laptop systemd[1]: systemd-pcrphase-initrd.service - TPM PCR Barrier (initrd) skipped, unmet condition check ConditionSecurity=measured-uki
+[    1.152228] laptop systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    1.152235] laptop systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[    1.152243] laptop systemd[1]: Finished dracut-cmdline-ask.service - dracut ask for additional cmdline parameters.
+[    1.152252] laptop systemd[1]: Starting dracut-cmdline.service - dracut cmdline hook...
+[    1.152258] laptop systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+[    1.152286] laptop systemd-journald[226]: Collecting audit messages is disabled.
+[    1.152303] laptop systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+[    1.152484] laptop kernel: usb 3-1: New USB device found, idVendor=3277, idProduct=00cc, bcdDevice= 0.02
+[    1.152653] laptop kernel: usb 3-1: New USB device strings: Mfr=2, Product=1, SerialNumber=3
+[    1.152820] laptop kernel: usb 3-1: Product: USB Camera
+[    1.152985] laptop kernel: usb 3-1: Manufacturer: Sonix Technology Co., Ltd.
+[    1.153162] laptop kernel: usb 3-1: SerialNumber: SN0001
+[    1.153171] laptop systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+[    1.153178] laptop systemd[1]: Reached target local-fs-pre.target - Preparation for Local File Systems.
+[    1.153185] laptop systemd[1]: Reached target local-fs.target - Local File Systems.
+[    1.153194] laptop kernel: ppdev: user-space parallel port driver
+[    1.153200] laptop kernel: lp: driver loaded but no devices found
+[    1.153207] laptop systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[    1.153214] laptop systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[    1.153456] laptop kernel: hub 1-2:1.0: USB hub found
+[    1.153688] laptop kernel: hub 1-2:1.0: 4 ports detected
+[    1.153696] laptop kernel: usb: port power management may be unreliable
+[    1.153703] laptop systemd[1]: Finished dracut-cmdline.service - dracut cmdline hook.
+[    1.153712] laptop systemd[1]: Starting dracut-pre-udev.service - dracut pre-udev hook...
+[    1.153719] laptop systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+[    1.153726] laptop systemd[1]: Finished dracut-pre-udev.service - dracut pre-udev hook.
+[    1.153733] laptop systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+[    1.153826] laptop kernel: usb 2-2: new SuperSpeed USB device number 2 using xhci_hcd
+[    1.154120] laptop systemd[1]: Started systemd-journald.service - Journal Service.
+[    1.174044] laptop kernel: usb 2-2: New USB device found, idVendor=05e3, idProduct=0626, bcdDevice= 6.63
+[    1.174383] laptop kernel: usb 2-2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.174637] laptop kernel: usb 2-2: Product: USB3.1 Hub
+[    1.174873] laptop kernel: usb 2-2: Manufacturer: GenesysLogic
+[    1.203063] laptop kernel: hub 2-2:1.0: USB hub found
+[    1.204059] laptop kernel: hub 2-2:1.0: 4 ports detected
+[    1.281084] laptop kernel: usb 1-3: new full-speed USB device number 3 using xhci_hcd
+[    1.424097] laptop kernel: usb 1-3: New USB device found, idVendor=3274, idProduct=8012, bcdDevice= 1.00
+[    1.424264] laptop kernel: usb 1-3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.424739] laptop kernel: usb 1-3: Product: MAFP General Device 
+[    1.425183] laptop kernel: usb 1-3: Manufacturer: MicroarrayTechnology
+[    1.425529] laptop kernel: usb 1-3: SerialNumber: 1120050901090210
+[    1.544079] laptop kernel: usb 1-5: new full-speed USB device number 4 using xhci_hcd
+[    1.580067] laptop kernel: tsc: Refined TSC clocksource calibration: 3792.880 MHz
+[    1.580112] laptop kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x6d58273f81c, max_idle_ns: 881591146675 ns
+[    1.580135] laptop kernel: clocksource: Switched to clocksource tsc
+[    1.656019] laptop kernel: hid: raw HID events driver (C) Jiri Kosina
+[    1.687038] laptop kernel: usb 1-5: New USB device found, idVendor=0bda, idProduct=b85b, bcdDevice= 0.00
+[    1.687673] laptop kernel: usb 1-5: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.688349] laptop kernel: usb 1-5: Product: Bluetooth Radio
+[    1.688839] laptop kernel: usb 1-5: Manufacturer: Realtek
+[    1.689186] laptop kernel: usb 1-5: SerialNumber: 00e04c000001
+[    1.693022] laptop kernel: ccp 0000:6e:00.2: enabling device (0000 -> 0002)
+[    1.696076] laptop kernel: ccp 0000:6e:00.2: tee enabled
+[    1.697039] laptop kernel: ccp 0000:6e:00.2: psp enabled
+[    1.740017] laptop kernel: ACPI: bus type thunderbolt registered
+[    1.843021] laptop kernel: Key type psk registered
+[    1.847012] laptop kernel: ACPI: video: Video Device [VGA] (multi-head: yes  rom: no  post: no)
+[    1.848016] laptop kernel: input: Video Bus as /devices/pci0000:00/0000:00:08.1/acpi.video_bus.0/input/input3
+[    1.851013] laptop kernel: input: PNP0C50:00 36B6:C001 Mouse as /devices/platform/AMDI0010:00/i2c-0/i2c-PNP0C50:00/0018:36B6:C001.0001/input/input4
+[    1.851041] laptop kernel: input: PNP0C50:00 36B6:C001 Touchpad as /devices/platform/AMDI0010:00/i2c-0/i2c-PNP0C50:00/0018:36B6:C001.0001/input/input5
+[    1.851053] laptop kernel: hid-generic 0018:36B6:C001.0001: input,hidraw0: I2C HID v1.00 Mouse [PNP0C50:00 36B6:C001] on i2c-PNP0C50:00
+[    1.866023] laptop kernel: nvme 0000:0d:00.0: platform quirk: setting simple suspend
+[    1.866439] laptop kernel: nvme nvme0: pci function 0000:0d:00.0
+[    1.883057] laptop kernel: nvme nvme0: allocated 64 MiB host memory buffer (1 segment).
+[    1.900016] laptop kernel: nvme nvme0: 16/0/0 default/read/poll queues
+[    1.905036] laptop kernel:  nvme0n1: p1 p2
+[    1.910013] laptop kernel: input: PNP0C50:00 36B6:C001 Mouse as /devices/platform/AMDI0010:00/i2c-0/i2c-PNP0C50:00/0018:36B6:C001.0001/input/input6
+[    1.910056] laptop kernel: input: PNP0C50:00 36B6:C001 Touchpad as /devices/platform/AMDI0010:00/i2c-0/i2c-PNP0C50:00/0018:36B6:C001.0001/input/input7
+[    1.910078] laptop kernel: hid-multitouch 0018:36B6:C001.0001: input,hidraw0: I2C HID v1.00 Mouse [PNP0C50:00 36B6:C001] on i2c-PNP0C50:00
+[    2.101023] laptop kernel: EXT4-fs (nvme0n1p2): orphan cleanup on readonly fs
+[    2.101063] laptop kernel: EXT4-fs (nvme0n1p2): mounted filesystem ROOT-UUID ro with ordered data mode. Quota mode: none.
+[    2.962769] laptop systemd-journald[226]: Received SIGTERM from PID 1 (systemd).
+[    2.962882] laptop systemd[1]: systemd 259.9-0ubuntu0.1 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[    2.962919] laptop systemd[1]: Detected architecture x86-64.
+[    2.962946] laptop systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[    2.962958] laptop systemd[1]: initrd-switch-root.service: Deactivated successfully.
+[    2.962976] laptop systemd[1]: Stopped initrd-switch-root.service - Switch Root.
+[    2.962992] laptop systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    2.963019] laptop systemd[1]: Created slice system-cups.slice - CUPS Slice.
+[    2.963040] laptop systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+[    2.963067] laptop systemd[1]: Created slice user.slice - User and Session Slice.
+[    2.963084] laptop systemd[1]: systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch skipped, unmet condition check ConditionPathExists=!/run/plymouth/pid
+[    2.963097] laptop systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[    2.963109] laptop systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[    2.963123] laptop systemd[1]: Expecting device dev-disk-by\x2duuid-4CA3\x2d9D73.device - /dev/disk/by-uuid/4CA3-9D73...
+[    2.963138] laptop systemd[1]: Reached target imports.target - Image Downloads.
+[    2.963152] laptop systemd[1]: Stopped target initrd-switch-root.target - Switch Root.
+[    2.963163] laptop systemd[1]: Stopped target initrd-fs.target - Initrd File Systems.
+[    2.963178] laptop systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.
+[    2.963188] laptop systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[    2.963203] laptop systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[    2.963214] laptop systemd[1]: Reached target slices.target - Slice Units.
+[    2.963225] laptop systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+[    2.963235] laptop systemd[1]: Reached target time-set.target - System Time Set.
+[    2.963250] laptop systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[    2.963266] laptop systemd[1]: Listening on syslog.socket - Syslog Socket.
+[    2.963281] laptop systemd[1]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+[    2.963291] laptop systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[    2.963304] laptop systemd[1]: Listening on systemd-factory-reset.socket - Factory Reset Management.
+[    2.963319] laptop systemd[1]: Listening on systemd-mute-console.socket - Console Output Muting Service Socket.
+[    2.963330] laptop systemd[1]: Listening on systemd-oomd.socket - Userspace Out-Of-Memory (OOM) Killer Socket.
+[    2.963341] laptop systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-uki
+[    2.963353] laptop systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[    2.963366] laptop systemd[1]: Listening on systemd-resolved-monitor.socket - Resolve Monitor Varlink Socket.
+[    2.963378] laptop systemd[1]: Listening on systemd-resolved-varlink.socket - Resolve Service Varlink Socket.
+[    2.963390] laptop systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[    2.963402] laptop systemd[1]: Listening on systemd-udevd-varlink.socket - udev Varlink Socket.
+[    2.963418] laptop systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[    2.963430] laptop systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[    2.963442] laptop systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+[    2.963453] laptop systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+[    2.963463] laptop systemd[1]: Starting systemd-journald.service - Journal Service...
+[    2.963474] laptop systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[    2.963484] laptop systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+[    2.963508] laptop systemd[1]: modprobe@configfs.service - Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[    2.963524] laptop systemd[1]: modprobe@drm.service - Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[    2.963534] laptop systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+[    2.963548] laptop systemd[1]: modprobe@fuse.service - Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[    2.963558] laptop systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[    2.963567] laptop systemd[1]: plymouth-switch-root.service: Deactivated successfully.
+[    2.963577] laptop systemd[1]: Stopped plymouth-switch-root.service - Plymouth switch root service.
+[    2.963587] laptop systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[    2.963596] laptop systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[    2.963605] laptop systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+[    2.963617] laptop systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[    2.963626] laptop systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+[    2.963637] laptop systemd[1]: systemd-pcrnvdone.service - TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionPathExists=/etc/initrd-release
+[    2.963646] laptop systemd[1]: Reached target cryptsetup.target - Local Encrypted Volumes.
+[    2.963657] laptop systemd[1]: systemd-pcrproduct.service - TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+[    2.963671] laptop systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[    2.963683] laptop systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[    2.963694] laptop systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[    2.963708] laptop systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[    2.963719] laptop systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+[    2.963730] laptop systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+[    2.963741] laptop systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+[    2.963753] laptop systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+[    2.963791] laptop systemd-journald[489]: Collecting audit messages is disabled.
+[    2.963811] laptop systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[    2.963822] laptop kernel: pstore: Using crash dump compression: deflate
+[    2.963841] laptop systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[    2.963851] laptop systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[    2.963861] laptop kernel: pstore: Registered efi_pstore as persistent store backend
+[    2.963870] laptop systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+[    2.965116] laptop systemd[1]: Started systemd-journald.service - Journal Service.
+[    2.970024] laptop kernel: EXT4-fs (nvme0n1p2): re-mounted ROOT-UUID r/w.
+[    3.115379] laptop systemd-journald[489]: Received client request to flush runtime journal.
+[    3.115560] laptop kernel: Adding 8388604k swap on /swap.img.  Priority:-1 extents:5 across:8912892k SS
+[    3.504035] laptop kernel: input: Wireless hotkeys as /devices/virtual/input/input8
+[    3.622015] laptop kernel: piix4_smbus 0000:00:14.0: SMBus Host Controller at 0xb00, revision 0
+[    3.629279] laptop kernel: piix4_smbus 0000:00:14.0: Using register 0x02 for SMBus port selection
+[    3.632395] laptop kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    3.632444] laptop kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    3.632460] laptop kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    3.637046] laptop kernel: i2c i2c-1: Successfully instantiated SPD at 0x50
+[    3.648429] laptop kernel: i2c i2c-1: Successfully instantiated SPD at 0x51
+[    3.652725] laptop kernel: piix4_smbus 0000:00:14.0: Auxiliary SMBus Host Controller at 0xb20
+[    3.658499] laptop kernel: amd-pmf AMDI0102:00: PMF Smart PC not advertised in BIOS!:-22
+[    3.664308] laptop kernel: amd-pmf AMDI0102:00: registered PMF device successfully
+[    3.719467] laptop kernel: Bluetooth: Core ver 2.22
+[    3.719611] laptop kernel: NET: Registered PF_BLUETOOTH protocol family
+[    3.719646] laptop kernel: Bluetooth: HCI device and connection manager initialized
+[    3.719672] laptop kernel: Bluetooth: HCI socket layer initialized
+[    3.719696] laptop kernel: Bluetooth: L2CAP socket layer initialized
+[    3.719724] laptop kernel: Bluetooth: SCO socket layer initialized
+[    3.723037] laptop kernel: RAPL PMU: API unit is 2^-32 Joules, 2 fixed counters, 163840 ms ovfl timer
+[    3.723204] laptop kernel: RAPL PMU: hw unit of domain package 2^-16 Joules
+[    3.723249] laptop kernel: RAPL PMU: hw unit of domain core 2^-16 Joules
+[    3.728185] laptop kernel: mc: Linux media interface: v0.10
+[    3.732039] laptop kernel: r8169 0000:0b:00.0 eth0: RTL8168h/8111h, xx:xx:xx:xx:xx:01, XID 541, IRQ 93
+[    3.732513] laptop kernel: r8169 0000:0b:00.0 eth0: jumbo features [frames: 9194 bytes, tx checksumming: ko]
+[    3.792028] laptop kernel: videodev: Linux video capture interface: v2.00
+[    3.870082] laptop kernel: r8169 0000:0b:00.0 eno1: renamed from eth0
+[    3.876035] laptop kernel: kvm_amd: TSC scaling supported
+[    3.876134] laptop kernel: kvm_amd: Nested Virtualization enabled
+[    3.876179] laptop kernel: kvm_amd: Nested Paging enabled
+[    3.876207] laptop kernel: kvm_amd: LBR virtualization supported
+[    3.876245] laptop kernel: kvm_amd: [Firmware Bug]: Cannot enable x2AVIC, AVIC is unsupported
+[    3.876294] laptop kernel: kvm_amd: Virtual GIF supported
+[    3.876321] laptop kernel: kvm_amd: Virtual NMI enabled
+[    3.887018] laptop kernel: usbcore: registered new interface driver btusb
+[    3.891014] laptop kernel: Bluetooth: hci0: RTL: examining hci_ver=0b hci_rev=000b lmp_ver=0b lmp_subver=8852
+[    3.894087] laptop kernel: Bluetooth: hci0: RTL: rom_version status=0 version=1
+[    3.897014] laptop kernel: Bluetooth: hci0: RTL: btrtl_initialize: key id 0
+[    3.897081] laptop kernel: Bluetooth: hci0: RTL: loading rtl_bt/rtl8852bu_fw.bin
+[    3.898021] laptop kernel: spd5118 1-0050: DDR5 temperature sensor: vendor 0x00:0xb3 revision 2.2
+[    3.898329] laptop kernel: Bluetooth: hci0: RTL: loading rtl_bt/rtl8852bu_config.bin
+[    3.899014] laptop kernel: Bluetooth: hci0: RTL: cfg_sz 6, total sz 60107
+[    3.903053] laptop kernel: rtw89_8852be 0000:0c:00.0: loaded firmware rtw89/rtw8852b_fw-1.bin
+[    3.903777] laptop kernel: rtw89_8852be 0000:0c:00.0: enabling device (0000 -> 0003)
+[    3.904406] laptop kernel: spd5118 1-0051: DDR5 temperature sensor: vendor 0x00:0xb3 revision 2.2
+[    3.911031] laptop kernel: rtw89_8852be 0000:0c:00.0: Firmware version 0.29.29.15 (6fb3ec41), cmd version 0, type 5
+[    3.911818] laptop kernel: rtw89_8852be 0000:0c:00.0: Firmware version 0.29.29.15 (6fb3ec41), cmd version 0, type 3
+[    3.917025] laptop kernel: MCE: In-kernel MCE decoding enabled.
+[    3.935016] laptop kernel: loop0: detected capacity change from 0 to 151512
+[    3.936023] laptop kernel: loop1: detected capacity change from 0 to 151600
+[    3.936087] laptop kernel: loop2: detected capacity change from 0 to 8
+[    3.941030] laptop kernel: loop3: detected capacity change from 0 to 136816
+[    3.941085] laptop kernel: loop4: detected capacity change from 0 to 136784
+[    3.944018] laptop kernel: loop5: detected capacity change from 0 to 122984
+[    3.948019] laptop kernel: loop6: detected capacity change from 0 to 124152
+[    3.948088] laptop kernel: loop7: detected capacity change from 0 to 103920
+[    3.951879] laptop kernel: loop8: detected capacity change from 0 to 100880
+[    3.953052] laptop kernel: loop9: detected capacity change from 0 to 29104
+[    3.960020] laptop kernel: uvcvideo 3-1:1.0: Found UVC 1.00 device USB Camera (3277:00cc)
+[    3.979040] laptop kernel: amd_atl: AMD Address Translation Library initialized
+[    3.991019] laptop kernel: usbcore: registered new interface driver uvcvideo
+[    3.997017] laptop kernel: intel_rapl_common: Found RAPL domain package
+[    3.997162] laptop kernel: intel_rapl_common: Found RAPL domain core
+[    3.999021] laptop kernel: snd_hda_intel 0000:6e:00.1: enabling device (0000 -> 0002)
+[    3.999481] laptop kernel: snd_hda_intel 0000:6e:00.1: Handle vga_switcheroo audio client
+[    3.999864] laptop kernel: snd_hda_intel 0000:6e:00.6: enabling device (0000 -> 0002)
+[    4.022051] laptop kernel: input: HD-Audio Generic HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:08.1/0000:6e:00.1/sound/card0/input9
+[    4.022167] laptop kernel: input: HD-Audio Generic HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:08.1/0000:6e:00.1/sound/card0/input10
+[    4.022186] laptop kernel: input: HD-Audio Generic HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:08.1/0000:6e:00.1/sound/card0/input11
+[    4.022199] laptop kernel: input: HD-Audio Generic HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:08.1/0000:6e:00.1/sound/card0/input12
+[    4.052025] laptop kernel: snd_hda_codec_alc269 hdaudioC1D0: autoconfig for ALC233: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+[    4.052409] laptop kernel: snd_hda_codec_alc269 hdaudioC1D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    4.052605] laptop kernel: snd_hda_codec_alc269 hdaudioC1D0:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[    4.052805] laptop kernel: snd_hda_codec_alc269 hdaudioC1D0:    mono: mono_out=0x0
+[    4.053006] laptop kernel: snd_hda_codec_alc269 hdaudioC1D0:    inputs:
+[    4.053203] laptop kernel: snd_hda_codec_alc269 hdaudioC1D0:      Mic=0x12
+[    4.067021] laptop kernel: snd_pci_ps 0000:6e:00.5: enabling device (0000 -> 0002)
+[    4.096048] laptop kernel: input: HD-Audio Generic Front Headphone as /devices/pci0000:00/0000:00:08.1/0000:6e:00.6/sound/card1/input13
+[    4.227019] laptop kernel: rtw89_8852be 0000:0c:00.0: chip info CID: 0, CV: 2, AID: 0, ACV: 1, RFE: 1
+[    4.231040] laptop kernel: rtw89_8852be 0000:0c:00.0: rfkill hardware state changed to enable
+[    4.259043] laptop kernel: audit: type=1400 audit(1792973314.061:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="Discord" pid=1115 comm="apparmor_parser"
+[    4.259175] laptop kernel: audit: type=1400 audit(1792973314.061:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name=4D6F6E676F444220436F6D70617373 pid=1116 comm="apparmor_parser"
+[    4.259233] laptop kernel: audit: type=1400 audit(1792973314.061:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="balena-etcher" pid=1121 comm="apparmor_parser"
+[    4.259273] laptop kernel: audit: type=1400 audit(1792973314.062:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="QtWebEngineProcess" pid=1117 comm="apparmor_parser"
+[    4.259296] laptop kernel: audit: type=1400 audit(1792973314.062:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="buildah" pid=1125 comm="apparmor_parser"
+[    4.259337] laptop kernel: audit: type=1400 audit(1792973314.062:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="brave" pid=1124 comm="apparmor_parser"
+[    4.259371] laptop kernel: audit: type=1400 audit(1792973314.063:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="ch-checkns" pid=1128 comm="apparmor_parser"
+[    4.688057] laptop kernel: Bluetooth: hci0: RTL: fw version 0x42d34e04
+[    4.862100] laptop kernel: Bluetooth: hci0: AOSP extensions version v1.00
+[    6.167046] laptop kernel: rtw89_8852be 0000:0c:00.0 wlp12s0: renamed from wlan0
+[    6.167754] laptop kernel: amdgpu: Virtual CRAT table created for CPU
+[    6.167805] laptop kernel: amdgpu: Topology: Add CPU node
+[    6.167849] laptop kernel: amdgpu 0000:6e:00.0: enabling device (0006 -> 0007)
+[    6.168222] laptop kernel: amdgpu 0000:6e:00.0: initializing kernel modesetting (IP DISCOVERY 0x1002:0x1900 0x2782:0x1170 0xBA).
+[    6.177045] laptop kernel: kauditd_printk_skb: 199 callbacks suppressed
+[    6.177157] laptop kernel: audit: type=1400 audit(1792973315.979:210): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.mesa-2404" pid=1376 comm="apparmor_parser"
+[    6.177209] laptop kernel: audit: type=1400 audit(1792973315.979:211): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.cups" pid=1373 comm="apparmor_parser"
+[    6.177261] laptop kernel: audit: type=1400 audit(1792973315.980:212): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/28254/usr/lib/snapd/snap-confine" pid=1372 comm="apparmor_parser"
+[    6.177307] laptop kernel: audit: type=1400 audit(1792973315.980:213): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/27738/usr/lib/snapd/snap-confine" pid=1371 comm="apparmor_parser"
+[    6.183351] laptop kernel: audit: type=1400 audit(1792973315.984:214): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.cups.accept" pid=1383 comm="apparmor_parser"
+[    6.183526] laptop kernel: audit: type=1400 audit(1792973315.985:215): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.desktop-security-center" pid=1374 comm="apparmor_parser"
+[    6.183572] laptop kernel: audit: type=1400 audit(1792973315.985:216): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.cups.cancel" pid=1384 comm="apparmor_parser"
+[    6.183616] laptop kernel: audit: type=1400 audit(1792973315.986:217): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.firmware-updater" pid=1375 comm="apparmor_parser"
+[    6.183650] laptop kernel: audit: type=1400 audit(1792973315.987:218): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.onlyoffice-desktopeditors" pid=1377 comm="apparmor_parser"
+[    6.183702] laptop kernel: audit: type=1400 audit(1792973315.987:219): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.cups.cups-browsed" pid=1385 comm="apparmor_parser"
+[    6.189047] laptop kernel: amdgpu 0000:6e:00.0: register mmio base: 0xDC500000
+[    6.189874] laptop kernel: amdgpu 0000:6e:00.0: register mmio size: 524288
+[    6.197032] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 0 <common_v1_0_0> (soc21_common)
+[    6.197795] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 1 <gmc_v11_0_0> (gmc_v11_0)
+[    6.198482] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 2 <ih_v6_0_0> (ih_v6_0)
+[    6.199160] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 3 <psp_v13_0_4> (psp)
+[    6.199831] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 4 <smu_v13_0_0> (smu)
+[    6.200534] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 5 <dce_v1_0_0> (dm)
+[    6.201220] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 6 <gfx_v11_0_0> (gfx_v11_0)
+[    6.201864] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 7 <sdma_v6_0_0> (sdma_v6_0)
+[    6.202629] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 8 <vcn_v4_0_0> (vcn_v4_0)
+[    6.203270] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 9 <jpeg_v4_0_0> (jpeg_v4_0)
+[    6.203869] laptop kernel: amdgpu 0000:6e:00.0: detected ip block number 10 <mes_v11_0_0> (mes_v11_0)
+[    6.204435] laptop kernel: amdgpu 0000:6e:00.0: Fetched VBIOS from VFCT
+[    6.205048] laptop kernel: amdgpu 0000:6e:00.0: [drm] ATOM BIOS: 113-PHXGENERIC-001
+[    6.246071] laptop kernel: amdgpu 0000:6e:00.0: vgaarb: deactivate vga console
+[    6.246876] laptop kernel: amdgpu 0000:6e:00.0: Trusted Memory Zone (TMZ) feature enabled
+[    6.247105] laptop kernel: amdgpu 0000:6e:00.0: vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+[    6.247322] laptop kernel: amdgpu 0000:6e:00.0: VRAM: 1024M 0x0000008000000000 - 0x000000803FFFFFFF (1024M used)
+[    6.247528] laptop kernel: amdgpu 0000:6e:00.0: GART: 512M 0x00007FFF00000000 - 0x00007FFF1FFFFFFF
+[    6.247718] laptop kernel: amdgpu 0000:6e:00.0: [drm] Detected VRAM RAM=1024M, BAR=1024M
+[    6.247922] laptop kernel: amdgpu 0000:6e:00.0: [drm] RAM width 128bits DDR5
+[    6.248137] laptop kernel: amdgpu 0000:6e:00.0:  1024M of VRAM memory ready
+[    6.248336] laptop kernel: amdgpu 0000:6e:00.0:  15157M of GTT memory ready.
+[    6.248544] laptop kernel: amdgpu 0000:6e:00.0: [drm] GART: num cpu pages 131072, num gpu pages 131072
+[    6.248759] laptop kernel: amdgpu 0000:6e:00.0: [drm] PCIE GART of 512M enabled (table at 0x000000803FD00000).
+[    6.249399] laptop kernel: amdgpu 0000:6e:00.0: [drm] Loading DMUB firmware via PSP: version=0x08005700
+[    6.249948] laptop kernel: amdgpu 0000:6e:00.0: [VCN instance 0] Found VCN firmware Version ENC: 1.24 DEC: 9 VEP: 0 Revision: 16
+[    6.250361] laptop kernel: amdgpu 0000:6e:00.0: MES: vmid_mask_mmhub 0x0000ff00, vmid_mask_gfxhub 0x0000ff00
+[    6.250732] laptop kernel: amdgpu 0000:6e:00.0: MES: gfx_hqd_mask 0x00000002, compute_hqd_mask 0x0000000c, sdma_hqd_mask 0x000000fc
+[    6.274013] laptop kernel: amdgpu 0000:6e:00.0: reserve 0x4000000 from 0x8038000000 for PSP TMR
+[    6.421030] laptop kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    6.421117] laptop kernel: Bluetooth: BNEP filters: protocol multicast
+[    6.421544] laptop kernel: Bluetooth: BNEP socket layer initialized
+[    6.424014] laptop kernel: Bluetooth: MGMT ver 1.23
+[    6.434064] laptop kernel: NET: Registered PF_ALG protocol family
+[    6.484022] laptop kernel: nvme nvme0: using unchecked data buffer
+[    6.551132] laptop kernel: NET: Registered PF_QIPCRTR protocol family
+[    6.558022] laptop kernel: Generic FE-GE Realtek PHY r8169-0-b00:00: attached PHY driver (mii_bus:phy_addr=r8169-0-b00:00, irq=MAC)
+[    6.681139] laptop kernel: r8169 0000:0b:00.0 eno1: Link is Down
+[    6.807021] laptop kernel: amdgpu 0000:6e:00.0: RAS: optional ras ta ucode is not available
+[    6.816018] laptop kernel: amdgpu 0000:6e:00.0: RAP: optional rap ta ucode is not available
+[    6.817694] laptop kernel: amdgpu 0000:6e:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
+[    6.849029] laptop kernel: amdgpu 0000:6e:00.0: SMU is initialized successfully!
+[    6.851025] laptop kernel: amdgpu 0000:6e:00.0: [drm] Display Core v3.2.369 initialized on DCN 3.1.4
+[    6.851690] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-HDMI FRL PCON supported
+[    6.853019] laptop kernel: amdgpu 0000:6e:00.0: [drm] DMUB hardware initialized: version=0x08005700
+[    6.856031] laptop kernel: snd_hda_intel 0000:6e:00.1: bound 0000:6e:00.0 (ops amdgpu_dm_audio_component_bind_ops [amdgpu])
+[    6.943050] laptop kernel: amdgpu 0000:6e:00.0: [drm] eDP-1: PSR support 1, DC PSR ver 0, sink PSR ver 3 DPCD caps 0x7a su_y_granularity 4
+[    6.943499] laptop kernel: amdgpu 0000:6e:00.0: [drm] HDMI-A-1: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.943887] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-1: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.944340] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-2: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.944610] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-3: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.944859] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-4: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.945146] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-5: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.945431] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-6: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.945737] laptop kernel: amdgpu 0000:6e:00.0: [drm] DP-7: PSR support 0, DC PSR ver -1, sink PSR ver 0 DPCD caps 0x0 su_y_granularity 0
+[    6.955028] laptop kernel: kfd kfd: Allocated 3969056 bytes on gart
+[    6.955448] laptop kernel: kfd kfd: Total number of KFD nodes to be created: 1
+[    6.955679] laptop kernel: amdgpu: Virtual CRAT table created for GPU
+[    6.955699] laptop kernel: amdgpu: Topology: Add GPU node [0x1002:0x1900]
+[    6.955715] laptop kernel: kfd kfd: added device 1002:1900
+[    6.955910] laptop kernel: amdgpu 0000:6e:00.0: SE 1, SH per SE 2, CU per SH 6, active_cu_number 12
+[    6.956225] laptop kernel: amdgpu 0000:6e:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+[    6.956521] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+[    6.956819] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+[    6.957248] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+[    6.957505] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+[    6.957748] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+[    6.957990] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+[    6.958254] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+[    6.958507] laptop kernel: amdgpu 0000:6e:00.0: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+[    6.958762] laptop kernel: amdgpu 0000:6e:00.0: ring sdma0 uses VM inv eng 12 on hub 0
+[    6.959072] laptop kernel: amdgpu 0000:6e:00.0: ring vcn_unified_0 uses VM inv eng 0 on hub 8
+[    6.959425] laptop kernel: amdgpu 0000:6e:00.0: ring jpeg_dec uses VM inv eng 1 on hub 8
+[    6.959825] laptop kernel: amdgpu 0000:6e:00.0: ring mes_kiq_3.1.0 uses VM inv eng 13 on hub 0
+[    6.967019] laptop kernel: amdgpu 0000:6e:00.0: Runtime PM not available
+[    6.976018] laptop kernel: amdgpu 0000:6e:00.0: [drm] Using custom brightness curve
+[    6.978020] laptop kernel: amdgpu 0000:6e:00.0: [drm] Registered 4 planes with drm panic
+[    6.988011] laptop kernel: [drm] Initialized amdgpu 3.64.0 for 0000:6e:00.0 on minor 1
+[    6.996031] laptop kernel: fbcon: amdgpudrmfb (fb0) is primary device
+[    6.996150] laptop kernel: fbcon: Deferring console take-over
+[    6.996194] laptop kernel: amdgpu 0000:6e:00.0: [drm] fb0: amdgpudrmfb frame buffer device
+[    7.015036] laptop kernel: [drm] pre_validate_dsc:1667 MST_DSC dsc precompute is not needed
+[    7.057028] laptop kernel: fbcon: Taking over console
+[    7.061025] laptop kernel: Console: switching to colour frame buffer device 180x56
+[    7.964025] laptop kernel: Bluetooth: RFCOMM TTY layer initialized
+[    7.964095] laptop kernel: Bluetooth: RFCOMM socket layer initialized
+[    7.964119] laptop kernel: Bluetooth: RFCOMM ver 1.11
+[    8.886018] laptop kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+[    9.059040] laptop kernel: rfkill: input handler disabled
+[   10.813275] laptop kernel: wlp12s0: authenticate with xx:xx:xx:xx:xx:03 (local address=xx:xx:xx:xx:xx:02)
+[   10.813354] laptop kernel: wlp12s0: send auth to xx:xx:xx:xx:xx:03 (try 1/3)
+[   10.825050] laptop kernel: wlp12s0: authenticate with xx:xx:xx:xx:xx:03 (local address=xx:xx:xx:xx:xx:02)
+[   10.825157] laptop kernel: wlp12s0: send auth to xx:xx:xx:xx:xx:03 (try 1/3)
+[   10.835322] laptop kernel: wlp12s0: authenticated
+[   10.837037] laptop kernel: wlp12s0: associate with xx:xx:xx:xx:xx:03 (try 1/3)
+[   10.839065] laptop kernel: wlp12s0: RX AssocResp from xx:xx:xx:xx:xx:03 (capab=0x11 status=0 aid=1)
+[   10.947206] laptop kernel: wlp12s0: associated
+[   12.753024] laptop kernel: Initializing XFRM netlink socket
+[   12.777026] laptop kernel: IPsec XFRM device driver
+[   12.874032] laptop kernel: kauditd_printk_skb: 68 callbacks suppressed
+[   12.874133] laptop kernel: audit: type=1400 audit(1792973322.678:288): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=4785 comm="apparmor_parser"
+[   13.266103] laptop kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[   15.944112] laptop kernel: warning: `ThreadPoolForeg' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+[  338.244060] laptop kernel: audit: type=1400 audit(1792973648.048:289): apparmor="AUDIT" operation="userns_create" class="namespace" info="Userns create - transitioning profile" profile="unconfined" pid=6718 comm="(ubuntu-insigh)" requested="userns_create" target="unprivileged_userns" execpath="/usr/lib/systemd/systemd-executor"
+[  338.246091] laptop kernel: audit: type=1400 audit(1792973648.049:290): apparmor="DENIED" operation="capable" class="cap" profile="unprivileged_userns" pid=6718 comm="(ubuntu-insigh)" capability=21  capname="sys_admin"
+[  338.301037] laptop kernel: audit: type=1400 audit(1792973648.105:291): apparmor="DENIED" operation="getattr" class="file" info="Failed name lookup - disconnected path" error=-13 profile="unprivileged_userns" name="" pid=6816 comm="systemd-detect-" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[  518.241060] laptop kernel: audit: type=1400 audit(1792973828.045:292): apparmor="AUDIT" operation="userns_create" class="namespace" info="Userns create - transitioning profile" profile="unconfined" pid=7402 comm="(ubuntu-insigh)" requested="userns_create" target="unprivileged_userns" execpath="/usr/lib/systemd/systemd-executor"
+[  518.243072] laptop kernel: audit: type=1400 audit(1792973828.047:293): apparmor="DENIED" operation="capable" class="cap" profile="unprivileged_userns" pid=7402 comm="(ubuntu-insigh)" capability=21  capname="sys_admin"
+[ 1130.335085] laptop kernel: Lockdown: modprobe: unsafe module parameters is restricted; see man kernel_lockdown.7
+[ 1130.337051] laptop kernel: ec_sys: `0' invalid for parameter `write_support'
+[ 1134.777089] laptop kernel: Lockdown: modprobe: unsafe module parameters is restricted; see man kernel_lockdown.7
+[ 1134.777242] laptop kernel: ec_sys: `0' invalid for parameter `write_support'
+[ 1344.014145] laptop kernel: usb 1-2.1: new high-speed USB device number 5 using xhci_hcd
+[ 1344.128083] laptop kernel: usb 1-2.1: New USB device found, idVendor=13fe, idProduct=4500, bcdDevice= 1.00
+[ 1344.128914] laptop kernel: usb 1-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 1344.129424] laptop kernel: usb 1-2.1: Product: USB DISK 2.0
+[ 1344.129876] laptop kernel: usb 1-2.1: SerialNumber: REDACTED
+[ 1344.213047] laptop kernel: usb-storage 1-2.1:1.0: USB Mass Storage device detected
+[ 1344.213779] laptop kernel: scsi host0: usb-storage 1-2.1:1.0
+[ 1344.214209] laptop kernel: usbcore: registered new interface driver usb-storage
+[ 1344.221022] laptop kernel: usbcore: registered new interface driver uas
+[ 1345.261365] laptop kernel: scsi 0:0:0:0: Direct-Access              USB DISK 2.0     PMAP PQ: 0 ANSI: 4
+[ 1345.263063] laptop kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+[ 1345.265069] laptop kernel: sd 0:0:0:0: [sda] 30261248 512-byte logical blocks: (15.5 GB/14.4 GiB)
+[ 1345.267028] laptop kernel: sd 0:0:0:0: [sda] Write Protect is off
+[ 1345.267957] laptop kernel: sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+[ 1345.268834] laptop kernel: sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[ 1345.292052] laptop kernel:  sda: sda1 sda2
+[ 1345.293111] laptop kernel: sd 0:0:0:0: [sda] Attached SCSI removable disk
+[ 1834.650141] laptop kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+[ 1840.604169] laptop kernel: rfkill: input handler enabled
+[ 1840.751022] laptop kernel: audit: type=1400 audit(1792975150.555:294): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9511 comm="fusermount3" capability=1  capname="dac_override"
+[ 1840.751133] laptop kernel: audit: type=1400 audit(1792975150.555:295): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9511 comm="fusermount3" capability=7  capname="setuid"
+[ 1840.751190] laptop kernel: audit: type=1400 audit(1792975150.555:296): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9510 comm="fusermount3" capability=1  capname="dac_override"
+[ 1840.751226] laptop kernel: audit: type=1400 audit(1792975150.555:297): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9510 comm="fusermount3" capability=7  capname="setuid"
+[ 1840.751253] laptop kernel: audit: type=1400 audit(1792975150.555:298): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9515 comm="fusermount3" capability=7  capname="setuid"
+[ 1840.751295] laptop kernel: audit: type=1400 audit(1792975150.555:299): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9516 comm="fusermount3" capability=7  capname="setuid"
+[ 1840.769038] laptop kernel: audit: type=1400 audit(1792975150.573:300): apparmor="DENIED" operation="mount" class="mount" info="failed mntpnt match" error=-13 profile="fusermount3" name="/" pid=9520 comm="fusermount3" flags="rw, rprivate"
+[ 1841.000013] laptop kernel: audit: type=1107 audit(1792975150.804:301): pid=1460 uid=995 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/" interface="org.freedesktop.DBus.Peer" member="Ping" mask="send" name="org.freedesktop.Avahi" pid=2747 label="snap.cups.cupsd"
+                                exe="/usr/bin/dbus-daemon" sauid=995 hostname=? addr=? terminal=?'
+[ 1841.120134] laptop kernel: audit: type=1326 audit(1792975150.924:302): auid=4294967295 uid=0 gid=0 ses=4294967295 subj=snap.cups.cupsd pid=2746 comm="cupsd" exe="/snap/cups/1266/sbin/cupsd" sig=0 arch=c000003e syscall=93 compat=0 ip=0x7c80fd3bb56b code=0x50000
+[ 1841.240107] laptop kernel: audit: type=1400 audit(1792975151.044:303): apparmor="DENIED" operation="capable" class="cap" profile="fusermount3" pid=9815 comm="fusermount3" capability=1  capname="dac_override"
+[ 1846.791055] laptop kernel: wlp12s0: deauthenticating from xx:xx:xx:xx:xx:03 by local choice (Reason: 3=DEAUTH_LEAVING)
+[ 1848.629038] laptop systemd-shutdown[1]: Syncing filesystems and block devices.
+[ 1848.665884] laptop systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[ 1848.666109] laptop systemd-journald[489]: Received SIGTERM from PID 1 (systemd-shutdow).

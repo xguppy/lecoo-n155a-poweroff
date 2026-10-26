@@ -1,0 +1,46 @@
+Register reads on Lecoo N155A, BIOS N155A_00_V2.5_PKID (2026-03-27), EC 10.04,
+kernel 7.0.0-38-generic, Secure Boot off (lockdown none) for /dev/port and /dev/mem.
+Read right after an automatic power-on (2026-10-26 ~04:45 +04).
+
+== PM1 / GPE0 (FADT: PM1a_EVT 0x800, PM1a_CNT 0x804, GPE0 0x820, len 8)
+PM1_STS  = 0x0000  (cleared before OS, no wake-source info)
+PM1_EN   = 0x0020  [GBL_EN]
+PM1_CNT  = 0x0003
+GPE0_STS = 0x00800008  bits [3, 23]   (no handler, sysfs reports "STS invalid")
+GPE0_EN  = 0x06410400  bits [10, 16, 22, 25, 26]
+FADT flag "PCIEXP_WAK Bits Supported" = 1, but PM1_EN.PCIEXP_WAKE_DIS (bit 14)
+cannot be set: byte write via /dev/port and 16-bit outw both read back 0.
+
+== FCH PM MMIO (0xFED80300)
+PMx74 PM_ACPI_CONF = 0x1E020017:
+  DECODE_STD GLOBAL_EN RTC_EN_EN TIMER_EN_EN EN_SHUTDOWN_MSG
+  PCIE_WAK_MASK PCIE_WAK_INTR_DIS WAKE_AS_GEVENT bit28(unnamed)
+  (bit names from coreboot src/soc/amd/phoenix/include/soc/southbridge.h)
+PMx0BB = 0x00 (DSDT field PWDE = bit 6; SPTS(5) sets it to 1)
+
+== AMD GPIO (0xFED81500 + 4*pin), pins with interrupt or wake bits
+pin  reg        wake:S0i3 S3 S4/S5  int_en mask  level  int_sts wake_sts
+  0  0x081578E3      1    1    0        1     1      1      0        0
+  2  0x00150B00      0    0    0        1     0      1      0        0
+  8  0x08151B00      0    0    0        1     1      1      0        0
+ 11  0x00157A00      1    1    0        1     1      1      0        0
+ 24  0x00157A00      1    1    0        1     1      1      0        0
+ 44  0x00000800      0    0    0        1     0      0      0        0
+ 52  0x00000900      0    0    0        1     0      0      0        0
+ 54  0x00001800      0    0    0        1     1      0      0        0
+ 58  0x08007900      1    1    0        1     1      0      0        0
+ 59  0x08007900      1    1    0        1     1      0      0        0
+ 61  0x00007900      1    1    0        1     1      0      0        0
+ 62  0x00007900      1    1    0        1     1      0      0        0
+172  0x00000900      0    0    0        1     0      0      0        0
+No pin has the S4/S5 wake bit (bit 15) set. Kernel debugfs view: gpio-debugfs.txt.
+
+== EC RAM (ec_sys, read-only), ACPI field names from DSDT ECF2 region
+0xA7 = 0x00  WOLE=0 BYCF=0 ECS3=0 B1PN=0
+0xA9 = 0x00  AIPO=0 (power on at AC plug)  LOPO=0 (power on at lid open)
+0xF5 = 0x00  ATPU (OEM WMI writes 0x00 / 0xA0)
+Full dump: ec-ram-0x00-0xff.bin
+
+== FCH reset reason (kernel "x86/amd: Previous system reset reason")
+Logged only after intentional reboots ([0x00080800] CF9 0x6). Not logged after
+either successful or failed poweroffs, so failed poweroffs are not resets.
